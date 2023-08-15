@@ -1,0 +1,496 @@
+<html>
+<style>
+table, th, td {
+  text-align: center;
+  border-collapse: collapse;
+  color:FFFFFF;
+}
+td:nth-child(odd), th:nth-child(odd) {
+  background-color: #343231;
+  <!--opacity: 0.7;-->
+}
+tr {
+  border-bottom: 1px solid #4860A0;
+}
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+body {
+  margin: 0;
+}
+
+.header {
+  padding: 1px 16px;
+  background: #494949;
+  color: #569AC6;
+  font-family: verdana
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+</style>
+<title>Exul Omnium Perks</title>
+<body style="background-color:272726;">
+
+<div class="header" id="myHeader">
+  <h2>Complete List of Exul Omnium Perks</h2>
+</div>
+
+<!--
+<h2 style="color:569AC6">Complete List of Exul Omnium Perks</h2>
+
+<img src="https://cdn.discordapp.com/attachments/1051245549917044857/1051327039220748388/PerkExample1.png" style="width:15%" height="width:15%">
+<p style="font-family:verdana" style="color:#FFFFFF;">blah</p><br>
+
+<img src="https://cdn.discordapp.com/attachments/1051245549917044857/1051327061094051921/PerkExample2.png" style="width:15%" height="width:15%">
+
+-->
+
+<table  style="font-family:verdana">
+  <tr>
+    <th style="width:5%">Number</th>
+    <th style="width:10%">Icon</th>
+    <th style="width:13%">Name</th>
+	<th style="width:30%">Effect</th>
+	<th style="width:42%">Notes</th>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td><img src="https://cdn.discordapp.com/attachments/1051245549917044857/1051245600328405102/001AlterDamage.png" style="width:75" height="width:75"></td>
+    <td>AlterDamage</td>
+	<td>[Factor] Outgoing damage to [Faction] enemies</td>
+	<td style="text-align:left;font-size:14;padding:10px;">-If positive, merc deals extra damage, if negative, merc deals less damage.</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td><img src="https://cdn.discordapp.com/attachments/1051245549917044857/1051247924060889180/002AlterDefence.png" style="width:75" height="width:75"></td>
+    <td>AlterDefence</td>
+	<td>[Factor] Incoming damage from [Faction] enemies</td>
+	<td style="text-align:left;font-size:14;padding:10px;">-If negative, merc takes less damage, if positive, merc takes extra damage.</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td><img src="https://cdn.discordapp.com/attachments/1051245549917044857/1051247935603617792/003SelfHeal.png" style="width:75" height="width:75"></td>
+    <td>SelfHeal</td>
+	<td>[Factor] Combat score granted from attacking [Faction] enemies</td>
+	<td style="text-align:left;font-size:14;padding:10px;">-Factor is rerolled per attack sequence.</td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td><img src="https://cdn.discordapp.com/attachments/1051245549917044857/1051247950329815101/004Bulwark.png" style="width:75" height="width:75"></td>
+    <td>Bulwark</td>
+	<td>[Chance] For dealt damage from [Faction] enemies to be diverted to this merc instead of initial target</td>
+	<td style="text-align:left;font-size:14;padding:10px;">-On successful roll, mercs attack each other as if it were the one initially targeted.<br>
+		-The actual initial target of the enemy, your targeted ally, is ignored, thus the ally deals no damage to them.<br>
+		-If multiple of your allies have this perk, and multiple of them successfully trigger during a combat phase, you must pick which one of them becomes the new target for the enemy. You can pick a different ally each time their perks successfully roll during a combat sequence. 
+	</td>
+  </tr>
+  <tr>
+    <td>5</td>
+    <td><img src="https://cdn.discordapp.com/attachments/1051245549917044857/1051288115647614976/005SelfRespawn.png" style="width:75" height="width:75"></td>
+    <td>SelfRespawn</td>
+	<td>[Chance] For this merc to respawn after being killed by [Faction]</td>
+	<td style="text-align:left;font-size:14;padding:10px;">-The merc's combat score is replenished and reshuffled when it respawns, as if it entered the field for the first time.<br>
+		-The merc's land doesn't lose capacity upon it's death, is housed in the same land upon respawn.<br>
+		-This perk can activate as many times as it successfully rolls, meaning the merc could be immortal if you're very lucky.
+	</td>
+  </tr>
+  <tr>
+    <td>6</td>
+    <td><img src="https://cdn.discordapp.com/attachments/1051245549917044857/1051288133334999170/006AntiRespawn.png" style="width:75" height="width:75"></td>
+    <td>AntiRespawn</td>
+	<td>[Chance] For slain [Faction] enemies to be prevented from respawning</td>
+	<td style="text-align:left;font-size:14;padding:10px;">-Does nothing to enemies that don't respawn<br>
+		-This perk only works once per enemy slain, if the enemy has multiple chances to respawn they may do so.
+	</td>
+  </tr>
+  <tr>
+    <td>7</td>
+    <td><img src="https://cdn.discordapp.com/attachments/1051245549917044857/1051288148640014348/007LandHeal.png" style="width:75" height="width:75"></td>
+    <td>LandHeal</td>
+	<td>[Chance] For slain [Faction] enemies to replenish this merc’s land capacity</td>
+	<td style="text-align:left;font-size:14;padding:10px;">-Goes only 1 point per successfully roll<br>
+	-Land cannot go beyond it's initial capacity
+	</td>
+  </tr>
+  <tr>
+    <td>8</td>
+    <td><img src="https://cdn.discordapp.com/attachments/1051245549917044857/1051288163198447696/008DrawACard.png" style="width:75" height="width:75"></td>
+    <td>DrawACard</td>
+	<td>[Chance] To draw a card for every slain [Faction] enemy </td>
+	<td style="text-align:left;font-size:14;padding:10px;">-If your hand is already full, you must either discard a card from your hand or discard the one you picked from your deck.<br>
+	-If this merc also has any perk like Explosion(12) and ExcessDamage(13), you might be able to draw more than one card per combat sequence.
+	</td>
+  </tr>
+  <tr>
+    <td>9</td>
+    <td><img src="https://cdn.discordapp.com/attachments/1051245549917044857/1051288175739424868/009LandDamage.png" style="width:75" height="width:75"></td>
+    <td>LandDamage</td>
+	<td>[Chance] To destroy a [Faction] land's capacity after attacking enemy in it</td>
+	<td style="text-align:left;font-size:14;padding:10px;">-You cannot target which land capacity to destory, the order goes as follows: Empty slots, Slots affected by LandOccupy(19), Slots with mercs in them.<br>
+		-If a land slot with a merc in it is destroyed, the merc gets instantly relocated to another viable land of the player's choosing. If no other lands are available, the merc is destroyed.
+	</td>
+  </tr>
+  <tr>
+    <td>10</td>
+    <td><img src="https://cdn.discordapp.com/attachments/1051245549917044857/1051288188150354050/010StrikeFirst.png" style="width:75" height="width:75"></td>
+    <td>StrikeFirst</td>
+	<td>[Chance] To deal damage first to [Faction] enemy, before they attack back</td>
+	<td style="text-align:left;font-size:14;padding:10px;">-Enemy's combat score is calculated after getting struck and before it attacks back.<br>
+		-If the enemy dies before they would attack back, the attack sequence ends and the merc takes no damage.
+	</td>
+  </tr>
+  <tr>
+    <td>11</td>
+    <td><img src="https://cdn.discordapp.com/attachments/1051245549917044857/1051288199361744946/011StrikeLast.png" style="width:75" height="width:75"></td>
+    <td>StrikeLast</td>
+	<td>[Chance] To deal damage last to [Faction] enemy, after they attack the merc</td>
+	<td style="text-align:left;font-size:14;padding:10px;">-Merc's combat score is calculated after getting struck and before it attacks back.<br>
+		-If the merc dies before they would attack back, the attack sequence ends and the enemy takes no damage.
+	</td>
+  </tr>
+  <tr>
+    <td>12</td>
+    <td><img src="https://cdn.discordapp.com/attachments/1051245549917044857/1051288224078757958/012Explosion.png" style="width:75" height="width:75"></td>
+    <td>Explosion</td>
+	<td>[Factor] Damage dealt to all [Faction] enemies on field upon being killed</td>
+	<td style="text-align:left;font-size:14;padding:10px;">-This and Respawning are mutually exclusive. If the opprtunity arises, it is up to you to decide if the merc will explode and deal damage or respawn. Mercs that respawn can still explode if they die again.<br>
+		-If this perk uses a dice value (rather than a static number), the factor is rolled a new time for each of the opposing mercs which would get affected.<br>
+		-The explosion damage isn't affected by other damage modifiers the merc may have, i.e. affected mercs cannot get Drain(22), AlterDamage(1), ExcessDamage(13), Butcher(14), etc. Damage done by explosion is flat damage which cannot be influenced by other perks the merc has.<br>
+		-If the mercs on the recieving end of the explosion have perks that modify incoming damage, such as AlterDefence(2) or NegateDamage(18) etc.., Those still run as if recieving damage normally through a combat sequence.<br>
+		-In games with more than two players, everyone must decide whether explosion damage is dealt to the mercs controlled by the player whose merc triggered the death (just one group of mercs), or if explosion damage is dealt to every single opposing merc on the field.<br>
+		-In the unlikely circumstance an opponent has zero mercs on the field when this perk is triggered, that player will take one hit of damage.
+	</td>
+  </tr>
+  <tr>
+    <td>13</td>
+    <td><img src="https://cdn.discordapp.com/attachments/1051245549917044857/1051288235915100300/013ExcessDamage.png" style="width:75" height="width:75"></td>
+    <td>ExcessDamage</td>
+	<td>[Chance] To deal excess damage to next [Faction] enemy after killing an enemy</td>
+	<td style="text-align:left;font-size:14;padding:10px;">-If the merc deals 10 damage and it only takes 4 to kill an enemy, you can divert that remaining 6 damage to another enemy of your choice. If it only took 5 damage to kill that one, you can divert that remaining 1 damage to a third enemy, etc...<br>
+		-A typical combat sequence does not arise from this chain, so like none of the subsequent enemies affected attack the merc as well. the only damage the merc takes is from the primary interaction.
+		-If the "chain" of damage passes into a merc with NegateDamage(18), and it successfully rolls, that merc blocks all damage and essentially stops the chain, as if it had infinite combat score. Thus the chain cannot continue through them to more enemies afterwards.
+	</td>
+  </tr>
+  <tr>
+    <td>14</td>
+    <td><img src="https://cdn.discordapp.com/attachments/1051245549917044857/1051288249034883093/014Butcher.png" style="width:75" height="width:75"></td>
+    <td>Butcher</td>
+	<td>[Chance] To immediately kill [Faction] enemy</td>
+	<td style="text-align:left;font-size:14;padding:10px;">-Enemy still damages the merc, even if the enemy gets instakilled at the exact same moment.<br>
+		-If this perk is confronted with NegateDamage(18), the two players may set the game aside and brawl on the spot, where the victor's merc rules in favor. alternatively, Players could pick even or odds, and roll a dice to determine the outcome.
+	</td>
+  </tr>
+  <tr>
+    <td>15</td>
+    <td><img src="https://cdn.discordapp.com/attachments/1051245549917044857/1051288259768098896/015ChooseHeal.png" style="width:75" height="width:75"></td>
+    <td>ChooseHeal</td>
+	<td>[Factor] Combat score granted to [Faction] ally of your choice from attacking enemy</td>
+	<td style="text-align:left;font-size:14;padding:10px;">-An enemy of any faction could be attacked to have this work.<br>
+		-The merc itself cannot be targeted by the perk, it can only heal allies.
+	</td>
+  </tr>
+  <tr>
+    <td>16</td>
+    <td><img src="https://cdn.discordapp.com/attachments/1051245549917044857/1051288279015772251/016ChooseRespawn.png" style="width:75" height="width:75"></td>
+    <td>ChooseRespawn</td>
+	<td>[Chance] To respawn any fallen [Faction] ally whenever they should’ve died instead</td>
+	<td style="text-align:left;font-size:14;padding:10px;">-This perk can roll as long as the merc is alive.<br>
+		-Whenever an ally on the field dies, roll this perk for a chance of them respawning (as long as they meet the faction requirement).<br>
+		-Respawning is rolled by the merc's own perks first, then the perks of external mercs.<br>
+		-This doesnt interfere with other respawn effects, and those can be rolled as well if this perk doesn't activate.<br>
+		-This ability cannot target the merc itself, when it dies this ability cannot bring it back.
+	</td>
+  </tr>
+  <tr>
+    <td>17</td>
+    <td><img src="https://cdn.discordapp.com/attachments/1051245549917044857/1051288291254730802/017Noble.png" style="width:75" height="width:75"></td>
+    <td>Noble</td>
+	<td>For [Duration], merc cannot target [Faction] enemies</td>
+	<td style="text-align:left;font-size:14;padding:10px;">-If theres no duration, the effect is perpetual.<br>
+		-Enemies can still target this merc, in which case it will begin the attack sequence.
+	</td>
+  </tr>
+  <tr>
+    <td>18</td>
+    <td><img src="https://cdn.discordapp.com/attachments/1051245549917044857/1051288303179149363/018NegateDamage.png" style="width:75" height="width:75"></td>
+    <td>NegateDamage</td>
+	<td>[Chance] To negate all incoming damage from [Faction] enemies</td>
+	<td style="text-align:left;font-size:14;padding:10px;">-During a combat sequence, if this perk successfully rolls, this merc will take zero damage, but will still retaliate damage to the opposing merc.
+	-This perk can be rolled at any time the merc may take damage, such as from Explosion(12), ExcessDamage(13).
+	-This perk is futile against debuffs like Drain(22), Freeze(27), etc.. The merc could block the initial damage but the status effect will persist past that.
+	-With ExtraDamage(30), The merc will block the first hit but not the second.
+	-If this perk is confronted with NegateDamage(18), the two players may set the game aside and brawl on the spot, where the victor's merc rules in favor. alternatively, Players could pick even or odds, and roll a dice to determine the outcome.
+	</td>
+  </tr>
+  <tr>
+    <td>19</td>
+    <td><img src="https://cdn.discordapp.com/attachments/1051245549917044857/1051597119598899302/019LandOccupy.png" style="width:75" height="width:75"></td>
+    <td>LandOccupy</td>
+	<td>For [Duration]/On [Chance], merc inhabits one of enemy's [Faction] lands</td>
+	<td style="text-align:left;font-size:14;padding:10px;">-This is one of the only perks that uses either chance OR duration. If there's a chance, roll it when the merc enters the field. if it successfully rolls, the effect lasts until the merc is dead.<br>
+		-If the effect has a null value, it lasts until the merc is destroyed, just like the chance values.
+		-You pick the land the merc occupies, as long as it follows the faction condition. If gold, the merc can occupy any opponent's land.<br>
+		-The merc still inhabits one land of your own.<br>
+		-When the merc dies, the enemy's land capacity becomes available again, but your own land still loses a capacity.<br>
+		-This perk has no effect if all enemy's lands are full.<br>
+		-If this merc respawns, they continue to occupy the land capacity they previously did.<br>
+		-If the merc has multiple of these perks, they can inhabit multiple enemy lands at once, either in the same land or different ones.
+	</td>
+  </tr>
+  <tr>
+    <td>20</td>
+    <td><img src="https://cdn.discordapp.com/attachments/1051245549917044857/1053851166607413298/020AllHeal.png" style="width:75" height="width:75"></td>
+    <td>AllHeal</td>
+	<td>[Factor] Combat score granted to all [Faction] allies on the field upon being deployed</td>
+	<td style="text-align:left;font-size:14;padding:10px;">-The factor is rerolled for each ally.<br>
+		-The perk does not activate a second time upon respawn.
+	</td>
+  </tr>
+  <tr>
+    <td>21</td>
+    <td><img src="https://cdn.discordapp.com/attachments/1051245549917044857/1054717160389365780/021SpellImmunity.png" style="width:75" height="width:75"></td>
+    <td>SpellImmunity</td>
+	<td>[Chance] to ignore all negative status perks inflicted from [Faction] enemies</td>
+	<td style="text-align:left;font-size:14;padding:10px;">-This perk is rolled whenever the merc may take damage from these sources.<br>
+		-The negative status perks include: Drain(22), where this perk has no effect on them, ExcessDamage(13), where the merc cannot be targeted by the perk's effect, Explosion(12), where they won't be damaged from the perk's effect, Freeze(27), where they cannot be affected, Lifelink(28), where they cannot be targeted, ViewHand(23), where this card will not be revealed despite meeting all other requirements, and Snipe(42), Where this merc cannot be targeted.<br>
+		-For Drain(22), If the merc is damaged by an enemy with Drain(22), and this merc successfully negates it, it will never take damage from the ability, unless directly attacked again where it might not negate the ability. At the beginning of the new turn, whether the merc negated the effect or not on the round it was initially damaged will determine if it will continue taking damage or not.
+	</td>
+  </tr>
+  <tr>
+    <td>22</td>
+    <td><img src="https://cdn.discordapp.com/attachments/1051245549917044857/1054359889536892969/022Drain.png" style="width:75" height="width:75"></td>
+    <td>Drain</td>
+	<td>For [Duration], [Faction] enemies that are attacked will take 2 damage per turn</td>
+	<td style="text-align:left;font-size:14;padding:10px;">-Respawning removes the debuff from the merc.<br>
+		-The effect persists even after the merc with which inflicted the ability dies<br>
+		-Explosion(12) does not activate this perk, only direct attacks do.<br>
+		-This ability synergizes with perks that alter how damage is dealt, such as ExcessDamage(13), where all concurrently damaged mercs will be affected with Drain as well.<br>
+		-This perk does not stack, i.e. if the merc is recieves this debuff and already had it, it does not take 4 damage instead of 2. the durations are not added onto each other either, and instead the previous duration (however much time is left), is overwritten by the most recent duration added (only if the most recent duration is longer than the previous)
+	</td>
+  </tr>
+  <tr>
+    <td>23</td>
+    <td><img src="https://cdn.discordapp.com/attachments/1051245549917044857/1054877836655218758/023ViewHand.png" style="width:75" height="width:75"></td>
+    <td>ViewHand</td>
+	<td>[Chance] for opponent to reveal all [Faction] cards in their hand upon being deployed</td>
+	<td style="text-align:left;font-size:14;padding:10px;">-If gold, the opponent reveals their entire hand.<br>
+		-If you're in a game with more than one opponent, you can pick which opponent this perk targets.<br>
+		-Pretty useless unless you have cards that can destroy cards in your opponent's hand.<br>
+		-If the merc respawns, this perk does not activate again.
+	</td>
+  </tr>
+  <tr>
+    <td>24</td>
+    <td><img src="https://cdn.discordapp.com/attachments/1051245549917044857/1055048675337961503/024DestroyCard.png" style="width:75" height="width:75"></td>
+    <td>DestroyCard</td>
+	<td>[Chance] to destroy a card in opponent's hand after damaging [Faction] enemy</td>
+	<td style="text-align:left;font-size:14;padding:10px;">-You cannot see the cards before destroying one, you're essentially picking at random unless you were able to see prior with ViewHand(23).<br>
+		-If you're in a game with 3+ players, you can pick which opponent this perk targets.<br>
+		-The opponent cannot shuffle their hand before this perk activates.
+	</td>
+  </tr>
+  <tr>
+    <td>25</td>
+    <td><img src="https://cdn.discordapp.com/attachments/1051245549917044857/1073463409221304411/025_AntiHeal.png" style="width:75" height="width:75"></td>
+    <td>AntiHeal</td>
+	<td>[Chance] for attacked [Faction] enemy to not be granted any combat score for one turn</td>
+	<td style="text-align:left;font-size:14;padding:10px;">-This perk prevents the merc from being granted any combat score for one turn, meaning after this effect successfully triggers during a combat sequence, in the prior and following turn perks like SelfHeal(3), ChooseHeal(15), AllHeal(20), Bestow(29), PassiveHealing(33), and Adaption(38) will not work. If the affected card has one of these abilities, it can still use them and grant combat score to another ally.
+	</td>
+  </tr>
+  <tr>
+    <td>26</td>
+    <td><img src="https://media.discordapp.net/attachments/1051245549917044857/1073552414575173632/026Sacrifice.png" style="width:75" height="width:75"></td>
+    <td>Sacrifice</td>
+	<td>Instead of being deployed, instantly destroy this merc and deal [Factor] damage to [Faction] enemy</td>
+	<td style="text-align:left;font-size:14;padding:10px;">-this perk can only be activated when the card is in your hand, at at your own discretion. If you choose not to activate this ability, the merc can be deployed normally.<br>
+	-This damage cannot be avoided by any abilities, such as NegateDamage(18), Bulwark(4), SpellImmunity(21), AlterDefence(2), etc.<br>
+	-This damage is not affected/altered by other perks the merc may have, such as ExcessDamage(13), Butcher(14), Drain(22), AlterDamage(1), etc.<br>
+	-The merc does not activate any turn-based perks it may have, like 'on deploy' or 'upon death', such as AllHeal(20), ViewHand(23), SelfRespawn(5), Explosion(12), etc.<br>
+	-NO EXTERNAL ABILITY CAN EVER INFLUENCE HOW THIS PERK OPERATES!!!!! NOTHING!!!!!!!
+	</td>
+  </tr>
+   <tr>
+    <td>27</td>
+    <td><img src="https://media.discordapp.net/attachments/1051245549917044857/1086785266309677177/027Freeze.png" style="width:75" height="width:75"></td>
+    <td>Freeze</td>
+	<td>After combat, attacked [Faction] enemy cannot attack for [Duration]</td>
+	<td style="text-align:left;font-size:14;padding:10px;">When frozen, the merc cannot deal damage. They can still be attacked, but will not be able to retaliate. They also cannot target mercs.<br>
+	-Passive abilities, like Bulwark(4), NegateDamage(18), LandOccupy(19), SpellImmunity(21), AlterDefence(2), etc, are not affected by being inflicted by freeze.<br>
+	-This ability synergizes with perks that alter how damage is dealt, such as ExcessDamage(13), where all concurrently damaged mercs will be affected as well.<br>
+	-Respawning removes the Freeze effect.<br>
+	-If a merc is attacked and already has freeze, the durations are not added onto each other either, and instead the previous duration (however much time is left), is overwritten by the most recent duration added (only if the most recent duration is longer than the previous)
+	</td>
+  </tr>
+  <tr>
+    <td>28</td>
+    <td><img src="https://cdn.discordapp.com/attachments/1051245549917044857/1088370389824049252/028Lifelink.png" style="width:75" height="width:75"></td>
+    <td>Lifelink</td>
+	<td>When deployed, [Chance] to link to [Faction] merc of your choice</td>
+	<td style="text-align:left;font-size:14;padding:10px;">-When a link is established, the two mercs share alive states. If one of the them dies, whatever the cause, the other will automatically die simultaneously.<br>
+	-If one of the mercs has a respawn ability which activates, when it's linked merc dies, this merc will respawn and be "disconnected". if both mercs have a respawn ability that activates, the link remains.<br>
+	-If one merc takes damage, the other DOES NOT lose health. the only factor lifelink alters is whether they're alive or dead. this also means they DON'T share abilities like some megaunit. If one gets healed, the other does not recieve that same value. It's only their absolute life/death state.<br>
+	-If the merc with this ability is deployed and it successfully activates, but none of the enemy mercs are of the required faction, the ability is wasted.<br>
+	-While the most conventional use is to link to an enemy's merc, if the requirements are met you could also link it with one of your own (.?)
+	</td>
+  </tr>
+   <tr>
+    <td>29</td>
+    <td><img src="https://cdn.discordapp.com/attachments/1051245549917044857/1089116368999288832/029Bestow.png" style="width:75" height="width:75"></td>
+    <td>Bestow</td>
+	<td>Instead of being deployed, instantly destroy this merc and grant [Factor] combat score to [Faction] ally</td>
+	<td style="text-align:left;font-size:14;padding:10px;">-this perk can only be activated when the card is in your hand, at at your own discretion. If you choose not to activate this ability, the merc can be deployed normally.<br>
+	-The merc does not activate any turn-based perks it may have, like 'on deploy' or 'upon death', such as AllHeal(20), ViewHand(23), SelfRespawn(5), Explosion(12), etc.<br>
+	-NO EXTERNAL ABILITY CAN EVER INFLUENCE HOW THIS PERK OPERATES!!!!! NOTHING!!!!!!!
+	</td>
+  </tr>
+   <tr>
+    <td>30</td>
+    <td><img src="https://cdn.discordapp.com/attachments/1051245549917044857/1102941900681523303/030ExtraDamage.png" style="width:75" height="width:75"></td>
+    <td>ExtraDamage</td>
+	<td>[Chance] to attack [Faction] enemy a second time, after inital combat sequence</td>
+	<td style="text-align:left;font-size:14;padding:10px;">- If this perk successfully rolls, a combat sequence is carried out like normal. After the two mercs exchange damage, take your merc's Dice Value from their combat score (the second value) and roll it. this value is then dealt to the enemy, with no consequence to your merc.<br>
+	-This extra damage is not influenced by any other perks your merc may have. If the enemy merc has a perk that may reduce or negate damage, those effects still apply to the additional damage.<br>
+	-If this merc dies during the initial combat sequence, the extra damage can still be applied, given it's rolled successfully.
+	</td>
+  </tr>
+   <tr>
+    <td>31</td>
+    <td><img src="https://cdn.discordapp.com/attachments/1051245549917044857/1102941920109543495/031MercCapacity.png" style="width:75" height="width:75"></td>
+    <td>MercCapacity</td>
+	<td>For [Duration], Merc can house 1 subsequent [Faction] ally, as if this merc has a land capacity</td>
+	<td style="text-align:left;font-size:14;padding:10px;">-This perk is active as long as the merc is alive. If this merc dies, the subsequent merc is is carrying assumes it's place in the land the merc was occupying. If the subsequent merc cannot fit in the concurrent land (because of faction restrictions), it canot be located to another land and is instantly destroyed. If this merc itself is respawned, the subsequent merc stays in this merc.<br>
+	-The subsequent merc does not inherit any of the merc's perks.<br>
+	-If the subsequent merc dies, another can fulfill the capacity. Technically, this merc would be a land with infinite capacity, but it can only hold one merc at a time (only until the duration runs out).<br>
+	-LandHeal(7) and LandDamage(9) do not affect this merc's perk, and only affects the land it's in. If the subsequent merc (the one contained whithin the other) is involved with LandHeal(7) and/or LandDamage(9), it also affects the land it's concurrent merc is in.<br>
+	-If an enemy has LandOccupy(19), that merc is able to inhabit this merc's land capacity.<br>
+	-If an ally has EmptyMerc(34), it can inhabit this merc's land capacity at no cost to the perk, meaning the merc can still hold another ally. 
+	</td>
+  </tr>
+   <tr>
+    <td>32</td>
+    <td><img src="https://cdn.discordapp.com/attachments/1051245549917044857/1102941940804239420/032DeathTimer.png" style="width:75" height="width:75"></td>
+    <td>DeathTimer</td>
+	<td>Merc is alive for [Duration] before it is automatically destroyed, unless it damages [Faction] enemies</td>
+	<td style="text-align:left;font-size:14;padding:10px;">-If this merc attacks the highlighted faction, it stays alive for 1 additional turn (+1 added to the remaining duration).<br>
+	-If this merc runs out of time and dies, it could be respawned, where the duration is reset.<br>
+	-If the merc dies to this perk, rather than typical enemy-influenced actions, it still activates any on-death perks it may have.<br>
+	-Unless this merc has a perk like ExtraDamage(30), ExcessDamage(13), or Drain(22), The merc will be incapable of actually gaining duration, because it could only attack once and gain 1 duration, which is then lost at the beginning of the next turn. This cycle will repeat until the merc dies to combat, or the merc has no remaining enemies of the highlighted faction, where it will then run out of time.
+	</td>
+  </tr>
+   <tr>
+    <td>33</td>
+    <td><img src="https://cdn.discordapp.com/attachments/1051245549917044857/1102941964363628604/033PassiveHealing.png" style="width:75" height="width:75"></td>
+    <td>PassiveHealing</td>
+	<td>When deployed, this merc is granted 2 combat score per turn for [Duration]</td>
+	<td style="text-align:left;font-size:14;padding:10px;">-The merc can heal above their combat score, just like every other healing perk.<br>
+	-Unlike other perks, this one does not have a faction constraint.<br>
+	</td>
+  </tr>
+   <tr>
+    <td>34</td>
+    <td><img src="https://cdn.discordapp.com/attachments/1051245549917044857/1102941991484010557/034EmptyMerc.png" style="width:75" height="width:75"></td>
+    <td>EmptyMerc</td>
+	<td>[Chance] for deployed merc to take up no capacity in [Faction] land</td>
+	<td style="text-align:left;font-size:14;padding:10px;">-This merc still needs to be bound to a land, thus it cannot be deployed without a proper land to accomidate it (even if it does not inhabit the capacity within).<br>
+	-The faction constraint may seem like a no-brainer, as the merc needs to be in the same land as it's own faction, but in the cases where the perk is a different faction than the merc itself, the ability can only work if the merc is placed in a land split comprised of the two aforementioned factions.<br>
+	-If the merc's land is destroyed, this merc is still destroyed (along with the others that may inhabit the land as well).<br>
+	-If successfully rolled, this merc can be deployed into a land that is at full capacity.<br>
+	</td>
+  </tr>  
+   <tr>
+    <td>35</td>
+    <td><img src="https://cdn.discordapp.com/attachments/1051245549917044857/1102942031896121454/035NoRespawn.png" style="width:75" height="width:75"></td>
+    <td>NoRespawn</td>
+	<td>[Chance] for this merc to ignore [Faction] ally respawn abilities</td>
+	<td style="text-align:left;font-size:14;padding:10px;">-This merc cannot be targeted by the respawn abilites that allies may provide. (only if the ally meets the faction and chance requirement)<br>
+	-If this merc itself does not have a respawn ability, it is impossible to bring them back.<br>
+	</td>
+  </tr>
+     <tr>
+    <td>36</td>
+    <td><img src="https://cdn.discordapp.com/attachments/1051245549917044857/1127991522332250273/036_Recycle.png" style="width:75" height="width:75"></td>
+    <td>Recycle</td>
+	<td>Instead of being deployed, instantly destroy this merc and draw [Factor] cards from your deck</td>
+	<td style="text-align:left;font-size:14;padding:10px;">-Unlike other perks, this one does not have a faction constraint.
+	</td>
+  </tr>
+     <tr>
+    <td>37</td>
+    <td><img src="https://cdn.discordapp.com/attachments/1051245549917044857/1127991549368737834/037_Retreat.png" style="width:75" height="width:75"></td>
+    <td>Retreat</td>
+	<td>Instead of being killed by [Faction] enemy, [Chance] to relocate this merc into a new land</td>
+	<td style="text-align:left;font-size:14;padding:10px;">-When the merc enters a new viable land, their combat score is set to only their dice value. e.g. If a card has 10 + D12, and dies; relocate it to a new land, roll a D12, and set that factor as the merc's new combat score. The fixed value is fully ignored.<br>
+	-The land capacity the merc was previously in is still destroyed.<br>
+	-This action still counts as a respawn, thus it can be countered with AntiRespawn(6).
+	-If there's no viable/available land for the merc to relocate into, it must be destroyed.<br>
+	-If this merc also has a respawn ability trigger, you can choose whether to keep it in the land it already occupies, or place it in a new one. If you place it in a new one, you can roll for the full combat score (you're not limitied to just the dice value anymore)<br>
+	</td>
+  </tr>
+     <tr>
+    <td>38</td>
+    <td><img src="https://cdn.discordapp.com/attachments/1051245549917044857/1127991572978470992/038_Adaption.png" style="width:75" height="width:75"></td>
+    <td>Adaption</td>
+	<td>When merc enters a [Faction] land, they are granted [Factor] combat score</td>
+	<td style="text-align:left;font-size:14;padding:10px;">-This happens not only when the merc is placed, but also every time it's relocated to a different land.<br>
+	</td>
+  </tr>
+     <tr>
+    <td>39</td>
+    <td><img src="https://cdn.discordapp.com/attachments/1051245549917044857/1127994219651420210/039_Unadaptive.png" style="width:75" height="width:75"></td>
+    <td>Unadaptive</td>
+	<td>When killed by [Faction] enemies, [Chance] for this merc to be destroyed instead of relocated</td>
+	<td style="text-align:left;font-size:14;padding:10px;">-A respawn ability could counteract this perk, allowing the merc to successfully relocate, with a revitalized combat score too.<br>
+	</td>
+  </tr>
+     <tr>
+    <td>40</td>
+    <td><img src="https://cdn.discordapp.com/attachments/1051245549917044857/1127991614917333182/040_Blunder.png" style="width:75" height="width:75"></td>
+    <td>Blunder</td>
+	<td>[Chance] for this merc to deal no damage to [Faction] enemy</td>
+	<td style="text-align:left;font-size:14;padding:10px;">-The opposite of Butcher(14).<br>
+	-Works as if the enemy merc has NegateDamage(18).<br>
+	-On-hit perks like AntiRespawn(6), ChooseHeal(15), ChooseRespawn(16), Drain(22), etc.. Still work like normal, it's just the merc does 0 damage.<br>
+	</td>
+  </tr>
+     <tr>
+    <td>41</td>
+    <td><img src="https://cdn.discordapp.com/attachments/1051245549917044857/1127991642939457627/041_Challenge.png" style="width:75" height="width:75"></td>
+    <td>Challenge</td>
+	<td>Merc can only target [Faction] enemies with a combat score of [Factor]</td>
+	<td style="text-align:left;font-size:14;padding:10px;">-Aside from Sacrifice(26), There is no other way this merc can affect enemies that don't meet the perk criteria. Not even perks like Explosion(12) or ExcessDamage(13).<br>
+	-Usually this factor is accompanied by by a 'greater than or equal to' (≥) or 'less than or equal to' (≤) symbol, meaning they won't be able to target weak enemies, or very strong ones, respectively.<br>
+	-This merc can still retaliate damage to a merc of any combat score if it's attacked. This perk only affects what mercs can be targeted.
+	-If no enemy mercs qualify for being targeted, this merc cannot target at all, much similarly to Noble(17).
+	</td>
+  </tr>
+     <tr>
+    <td>42</td>
+    <td><img src="https://cdn.discordapp.com/attachments/1051245549917044857/1127991661125972038/042_Snipe.png" style="width:75" height="width:75"></td>
+    <td>Snipe</td>
+	<td>When ally is attacking [Faction] enemy, [Chance] for this merc also attack that enemy, simultaneously.</td>
+	<td style="text-align:left;font-size:14;padding:10px;">-This damage can be affected by other perks this same merc might have, such as AlterDamage(1), Butcher(14), Drain22), etc..<br>
+	-The enemy merc does not retaliate to both attacking mercs, only the one that initially targeted it, meaning the merc with this perk remains unaffected at the end of the combat sequence.<br>
+	</td>
+  </tr>
+</table>
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
+
+</body>
+</html>
