@@ -60,7 +60,7 @@ body {
     <td>1</td>
     <td><img src="https://cdn.discordapp.com/attachments/1051245549917044857/1051245600328405102/001AlterDamage.png" style="width:75" height="width:75"></td>
     <td>AlterDamage</td>
-	<td>[Factor]! Outgoing damage to [Faction] enemies</td>
+	<td>[Factor] Outgoing damage to [Faction] enemies</td>
 	<td style="text-align:left;font-size:14;padding:10px;">-If positive, merc deals extra damage, if negative, merc deals less damage.</td>
   </tr>
   <tr>
@@ -170,8 +170,11 @@ body {
     <td>ExcessDamage</td>
 	<td>[Chance] To deal excess damage to next [Faction] enemy after killing an enemy</td>
 	<td style="text-align:left;font-size:14;padding:10px;">-If the merc deals 10 damage and it only takes 4 to kill an enemy, you can divert that remaining 6 damage to another enemy of your choice. If it only took 5 damage to kill that one, you can divert that remaining 1 damage to a third enemy, etc...<br>
-		-A typical combat sequence does not arise from this chain, so like none of the subsequent enemies affected attack the merc as well. the only damage the merc takes is from the primary interaction.
+		-A typical combat sequence does not arise from this chain, so like none of the subsequent enemies affected attack the merc as well. the only damage the merc takes is from the primary interaction.<br>
+		-This perk needs to be rolled every time it passes through an enemy. you can't roll it once at the beginning and then dump all remaining damage onto every other enemy until it's done.
+		-During the combat sequence, both mercs still damage each other at the same time. The "chain" still follows through to the other potential mercs, but this card's potentially diminished combat score doesn't influence the damage from the "chain". (Example: This card has 20 combat score. the card it attacks has 10 combat score, but deals a flat +10 damage. SO they deal damage at the same time, resulting in both dying. even though this card has a combat score of 0, the remaining 10 damage can still be passed on to more enemies.<br>
 		-If the "chain" of damage passes into a merc with NegateDamage(18), and it successfully rolls, that merc blocks all damage and essentially stops the chain, as if it had infinite combat score. Thus the chain cannot continue through them to more enemies afterwards.
+		-Excess damage could be diverted to the player directly. The opponent could still intercept that attack with one of their mercs, if possible.
 	</td>
   </tr>
   <tr>
@@ -210,7 +213,8 @@ body {
     <td>Noble</td>
 	<td>For [Duration], merc cannot target [Faction] enemies</td>
 	<td style="text-align:left;font-size:14;padding:10px;">-If theres no duration, the effect is perpetual.<br>
-		-Enemies can still target this merc, in which case it will begin the attack sequence.
+		-Enemies can still target this merc, in which case it will begin the attack sequence and this merc can retaliate damage.<br>
+		-The merc is still able to target opponent players directly like any other merc.
 	</td>
   </tr>
   <tr>
@@ -265,6 +269,7 @@ body {
     <td>Drain</td>
 	<td>For [Duration], [Faction] enemies that are attacked will take 2 damage per turn</td>
 	<td style="text-align:left;font-size:14;padding:10px;">-Respawning removes the debuff from the merc.<br>
+		-The timer starts on the turn that follows the one which the combat sequence occurred in.<br>
 		-The effect persists even after the merc with which inflicted the ability dies<br>
 		-Explosion(12) does not activate this perk, only direct attacks do.<br>
 		-This ability synergizes with perks that alter how damage is dealt, such as ExcessDamage(13), where all concurrently damaged mercs will be affected with Drain as well.<br>
@@ -317,7 +322,8 @@ body {
     <td><img src="https://media.discordapp.net/attachments/1051245549917044857/1086785266309677177/027Freeze.png" style="width:75" height="width:75"></td>
     <td>Freeze</td>
 	<td>After combat, attacked [Faction] enemy cannot attack for [Duration]</td>
-	<td style="text-align:left;font-size:14;padding:10px;">When frozen, the merc cannot deal damage. They can still be attacked, but will not be able to retaliate. They also cannot target mercs.<br>
+	<td style="text-align:left;font-size:14;padding:10px;">When frozen, the merc cannot deal damage. They can still be attacked, but will not be able to retaliate. They cannot target mercs.<br>
+	-The timer starts on the turn that follows the one which the combat sequence occurred in.<br>
 	-Passive abilities, like Bulwark(4), NegateDamage(18), LandOccupy(19), SpellImmunity(21), AlterDefence(2), etc, are not affected by being inflicted by freeze.<br>
 	-This ability synergizes with perks that alter how damage is dealt, such as ExcessDamage(13), where all concurrently damaged mercs will be affected as well.<br>
 	-Respawning removes the Freeze effect.<br>
@@ -375,6 +381,7 @@ body {
     <td>DeathTimer</td>
 	<td>Merc is alive for [Duration] before it is automatically destroyed, unless it damages [Faction] enemies</td>
 	<td style="text-align:left;font-size:14;padding:10px;">-If this merc attacks the highlighted faction, it stays alive for 1 additional turn (+1 added to the remaining duration).<br>
+	-The timer starts on the turn that follows the one which the combat sequence occurred in.<br>
 	-If this merc runs out of time and dies, it could be respawned, where the duration is reset.<br>
 	-If the merc dies to this perk, rather than typical enemy-influenced actions, it still activates any on-death perks it may have.<br>
 	-Unless this merc has a perk like ExtraDamage(30), ExcessDamage(13), or Drain(22), The merc will be incapable of actually gaining duration, because it could only attack once and gain 1 duration, which is then lost at the beginning of the next turn. This cycle will repeat until the merc dies to combat, or the merc has no remaining enemies of the highlighted faction, where it will then run out of time.
@@ -385,7 +392,8 @@ body {
     <td><img src="https://cdn.discordapp.com/attachments/1051245549917044857/1102941964363628604/033PassiveHealing.png" style="width:75" height="width:75"></td>
     <td>PassiveHealing</td>
 	<td>When deployed, this merc is granted 2 combat score per turn for [Duration]</td>
-	<td style="text-align:left;font-size:14;padding:10px;">-The merc can heal above their combat score, just like every other healing perk.<br>
+	<td style="text-align:left;font-size:14;padding:10px;">-The merc can heal above their combat score, just like every other healing/granting perk.<br>
+	-The timer starts on the turn that follows the one which the combat sequence occurred in.<br>
 	-Unlike other perks, this one does not have a faction constraint.<br>
 	</td>
   </tr>
