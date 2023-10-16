@@ -85,6 +85,7 @@ body {
 	<td style="text-align:left;font-size:14;padding:10px;">-On successful roll, mercs attack each other as if it were the one initially targeted.<br>
 		-The actual initial target of the enemy, your targeted ally, is ignored, thus the ally deals no damage to them.<br>
 		-If multiple of your allies have this perk, and multiple of them successfully trigger during a combat phase, you must pick which one of them becomes the new target for the enemy. You can pick a different ally each time their perks successfully roll during a combat sequence. 
+		-This perk is only active when your opponent targets one of your mercs, not when an opponent retaliates damage onto a merc you attack with (only works when they attack you, not when you attack them)
 	</td>
   </tr>
   <tr>
@@ -130,7 +131,7 @@ body {
     <td>LandDamage</td>
 	<td>[Chance] To destroy a [Faction] land's capacity after attacking enemy in it</td>
 	<td style="text-align:left;font-size:14;padding:10px;">-You cannot target which land capacity to destory, the order goes as follows: Empty slots, Slots affected by LandOccupy(19), Slots with mercs in them.<br>
-		-If a land slot with a merc in it is destroyed, the merc gets instantly relocated to another viable land of the player's choosing. If no other lands are available, the merc is destroyed.
+		-If a land is completely full, and a merc (of the opponent's choosing) cannot be relocated to a different land, no land capacity is diminished. if an opponent's merc CAN be relocated, they are forced to do so and must lose a land capacity.
 	</td>
   </tr>
   <tr>
@@ -171,10 +172,10 @@ body {
 	<td>[Chance] To deal excess damage to next [Faction] enemy after killing an enemy</td>
 	<td style="text-align:left;font-size:14;padding:10px;">-If the merc deals 10 damage and it only takes 4 to kill an enemy, you can divert that remaining 6 damage to another enemy of your choice. If it only took 5 damage to kill that one, you can divert that remaining 1 damage to a third enemy, etc...<br>
 		-A typical combat sequence does not arise from this chain, so like none of the subsequent enemies affected attack the merc as well. the only damage the merc takes is from the primary interaction.<br>
-		-This perk needs to be rolled every time it passes through an enemy. you can't roll it once at the beginning and then dump all remaining damage onto every other enemy until it's done.
+		-This perk only needs to be rolled once to dump all remaining damage onto every other enemy until it's done. (not rolling every time you want to pass the damage on) <br>
 		-During the combat sequence, both mercs still damage each other at the same time. The "chain" still follows through to the other potential mercs, but this card's potentially diminished combat score doesn't influence the damage from the "chain". (Example: This card has 20 combat score. the card it attacks has 10 combat score, but deals a flat +10 damage. SO they deal damage at the same time, resulting in both dying. even though this card has a combat score of 0, the remaining 10 damage can still be passed on to more enemies.<br>
 		-If the "chain" of damage passes into a merc with NegateDamage(18), and it successfully rolls, that merc blocks all damage and essentially stops the chain, as if it had infinite combat score. Thus the chain cannot continue through them to more enemies afterwards.
-		-Excess damage could be diverted to the player directly. The opponent could still intercept that attack with one of their mercs, if possible.
+		-Excess damage could be diverted to the player directly. The opponent could still intercept that attack with one of their mercs, if possible. If you choose for the excess damage to go to the player, it cannot then deal more damage to another merc again. If you choose to attack the player, it needs to be the final target of the 'chain'.
 	</td>
   </tr>
   <tr>
@@ -314,7 +315,8 @@ body {
 	-This damage cannot be avoided by any abilities, such as NegateDamage(18), Bulwark(4), SpellImmunity(21), AlterDefence(2), etc.<br>
 	-This damage is not affected/altered by other perks the merc may have, such as ExcessDamage(13), Butcher(14), Drain(22), AlterDamage(1), etc.<br>
 	-The merc does not activate any turn-based perks it may have, like 'on deploy' or 'upon death', such as AllHeal(20), ViewHand(23), SelfRespawn(5), Explosion(12), etc.<br>
-	-NO EXTERNAL ABILITY CAN EVER INFLUENCE HOW THIS PERK OPERATES!!!!! NOTHING!!!!!!!
+	-NO EXTERNAL ABILITY CAN EVER INFLUENCE HOW THIS PERK OPERATES!!!!! NOTHING!!!!!!! <br>
+	-This instant perk can only be activated if you have a deployed land corresponding to the merc of this instant perk. It does not matter if it's full, and it does not destroy a capacity. As long as theres a land the same faction as the merc, the instant perk can be activated.
 	</td>
   </tr>
    <tr>
@@ -349,7 +351,8 @@ body {
 	<td>Instead of being deployed, instantly destroy this merc and grant [Factor] combat score to [Faction] ally</td>
 	<td style="text-align:left;font-size:14;padding:10px;">-this perk can only be activated when the card is in your hand, at at your own discretion. If you choose not to activate this ability, the merc can be deployed normally.<br>
 	-The merc does not activate any turn-based perks it may have, like 'on deploy' or 'upon death', such as AllHeal(20), ViewHand(23), SelfRespawn(5), Explosion(12), etc.<br>
-	-NO EXTERNAL ABILITY CAN EVER INFLUENCE HOW THIS PERK OPERATES!!!!! NOTHING!!!!!!!
+	-NO EXTERNAL ABILITY CAN EVER INFLUENCE HOW THIS PERK OPERATES!!!!! NOTHING!!!!!!! <br>
+	-This instant perk can only be activated if you have a deployed land corresponding to the merc of this instant perk. It does not matter if it's full, and it does not destroy a capacity. As long as theres a land the same faction as the merc, the instant perk can be activated.
 	</td>
   </tr>
    <tr>
@@ -422,7 +425,8 @@ body {
     <td><img src="https://cdn.discordapp.com/attachments/1051245549917044857/1127991522332250273/036_Recycle.png" style="width:75" height="width:75"></td>
     <td>Recycle</td>
 	<td>Instead of being deployed, instantly destroy this merc and draw [Factor] cards from your deck</td>
-	<td style="text-align:left;font-size:14;padding:10px;">-Unlike other perks, this one does not have a faction constraint.
+	<td style="text-align:left;font-size:14;padding:10px;">-Unlike other perks, this one does not have a faction constraint. <br>
+	-This instant perk can only be activated if you have a deployed land corresponding to the merc of this instant perk. It does not matter if it's full, and it does not destroy a capacity. As long as theres a land the same faction as the merc, the instant perk can be activated.
 	</td>
   </tr>
      <tr>
@@ -483,6 +487,17 @@ body {
 	-The enemy merc does not retaliate to both attacking mercs, only the one that initially targeted it, meaning the merc with this perk remains unaffected at the end of the combat sequence.<br>
 	</td>
   </tr>
+     <tr>
+    <td>43</td>
+    <td><img src="https://cdn.discordapp.com/attachments/1051245549917044857/1163295570136412160/043_Deny.png" style="width:75" height="width:75"></td>
+    <td>Deny</td>
+	<td>[Chance] to deny opponent deployment of [Faction] mercs</td>
+	<td style="text-align:left;font-size:14;padding:10px;">-as long as a merc with this perk is on the field, mercs of the corresponding faction cannot be deployed and are prevented from entering the field (if the chance is rolled). <br>
+	-Includes split factions <br>
+	-Does not include lands <br>
+	-Does not include instant abilities like Sacrifice(26), Bestow(29), or Recycle(36).
+	</td>
+
 </table>
 
 <script>
