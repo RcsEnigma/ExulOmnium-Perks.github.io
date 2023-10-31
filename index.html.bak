@@ -492,7 +492,7 @@ body {
     <td><img src="https://cdn.discordapp.com/attachments/1051245549917044857/1163295570136412160/043_Deny.png" style="width:75" height="width:75"></td>
     <td>Deny</td>
 	<td>[Chance] to deny opponent deployment of [Faction] mercs</td>
-	<td style="text-align:left;font-size:14;padding:10px;">-as long as a merc with this perk is on the field, mercs of the corresponding faction cannot be deployed and are prevented from entering the field.(if the chance is rolled). <br>
+	<td style="text-align:left;font-size:14;padding:10px;">-as long as a merc with this perk is on the field, mercs of the corresponding faction cannot be deployed and are prevented from entering the field (if the chance is rolled). <br>
 	-Includes split factions <br>
 	-Does not include lands <br>
 	-Does not include instant abilities like Sacrifice(26), Bestow(29), or Recycle(36).
