@@ -52,7 +52,7 @@ body {
 
 	<div class="header" id="myHeader">
 		<h2>Complete List of Exul Omnium Perks</h2>
-		<a href="#BackToTop">Back to Top</a>
+		<a style="text-align: right;" href="#BackToTop">Back to Top</a>
 	</div>
 
 <!--
