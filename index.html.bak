@@ -34,9 +34,9 @@ body {
 <title>Exul Omnium Perks</title>
 <body style="background-color:272726;">
 
-<div class="header" id="myHeader">
-  <h2>Complete List of Exul Omnium Perks</h2>
-</div>
+	<div class="header" id="myHeader">
+		<h2>Complete List of Exul Omnium Perks</h2>
+	</div>
 
 <!--
 <h2 style="color:569AC6">Complete List of Exul Omnium Perks</h2>
@@ -47,15 +47,16 @@ body {
 <img src="https://cdn.discordapp.com/attachments/1051245549917044857/1051327061094051921/PerkExample2.png" style="width:15%" height="width:15%">
 
 -->
+<a href="#div_id">jump link</a>
 
 <table  style="font-family:verdana">
   <tr>
     <th style="width:2%">Number</th>
-    <th style="width:10%">Icon</th>
+    <th style="width:6%">Icon</th>
     <th style="width:10%">Name</th>
 	<th style="width:6%">Tags</th>
 	<th style="width:30%">Effect</th>
-	<th style="width:42%">Notes</th>
+	<th style="width:46%">Notes</th>
   </tr>
   <tr>
     <td>1</td>
