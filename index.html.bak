@@ -34,16 +34,28 @@ body {
 }
 
 .header {
-  padding: 1px 16px;
-  background: #494949;
-  color: #569AC6;
-  font-family: verdana
+    padding: 10px 16px;
+    background: #494949;
+    color: #569AC6;
+    font-family: verdana;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    position: relative;
+    z-index: 1000; 
 }
 
 .sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
+    position: fixed; 
+    top: 0;
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+}
+
+.header a {
+    color: #569AC6; /* Link color */
+    text-align: right; /* Align text to the right */
+    margin-left: auto; /* Push link to the right end */
 }
 </style>
 
