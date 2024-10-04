@@ -51,8 +51,11 @@ body {
 <img src="https://cdn.discordapp.com/attachments/1051245549917044857/1051327061094051921/PerkExample2.png" style="width:15%" height="width:15%">
 
 -->
-<a href="#044Reroll">
-	<img src="Icons/044Reroll.png" style="width:75" height="width:75"></td> 
+<a href="#001AlterDamage">
+	<img src="Icons/001AlterDamage.png" style="width:75" height="width:75"></td> 
+</a>
+<a href="#002AlterDefence">
+	<img src="Icons/002AlterDefence.png" style="width:75" height="width:75"></td> 
 </a>
 
 <table  style="font-family:verdana">
