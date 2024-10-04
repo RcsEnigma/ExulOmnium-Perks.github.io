@@ -51,7 +51,7 @@ body {
 <img src="https://cdn.discordapp.com/attachments/1051245549917044857/1051327061094051921/PerkExample2.png" style="width:15%" height="width:15%">
 
 -->
-<a href="#div_id">jump link</a>
+<a href="#my-section">Jump to Section</a>
 
 <table  style="font-family:verdana">
 <tr>
@@ -62,7 +62,7 @@ body {
 	<th style="width:30%">Effect</th>
 	<th style="width:46%">Notes</th>
 </tr>
-<tr>
+<tr id="001AlterDamage">
     <td>1</td>
     <td><img src="Icons/001AlterDamage.png" style="width:75" height="width:75"></td>
     <td>AlterDamage</td>
@@ -70,7 +70,7 @@ body {
 	<td>[Factor] Outgoing damage to [Faction] enemies</td>
 	<td style="text-align:left;font-size:14;padding:10px;">-If positive, merc deals extra damage, if negative, merc deals less damage.</td>
 </tr>
-<tr>
+<tr id="002AlterDefence">
     <td>2</td>
     <td><img src="Icons/002AlterDefence.png" style="width:75" height="width:75"></td>
     <td>AlterDefence</td>
@@ -78,7 +78,7 @@ body {
 	<td>[Factor] Incoming damage from [Faction] enemies</td>
 	<td style="text-align:left;font-size:14;padding:10px;">-If negative, merc takes less damage, if positive, merc takes extra damage.</td>
 </tr>
-<tr>
+<tr id="003SelfHeal">
     <td>3</td>
     <td><img src="Icons/003SelfHeal.png" style="width:75" height="width:75"></td>
     <td>SelfHeal</td>
@@ -86,7 +86,7 @@ body {
 	<td>[Factor] Combat score granted from attacking [Faction] enemies</td>
 	<td style="text-align:left;font-size:14;padding:10px;">-Factor is rerolled per attack sequence.</td>
 </tr>
-<tr>
+<tr id="004Bulwark">
     <td>4</td>
     <td><img src="Icons/004Bulwark.png" style="width:75" height="width:75"></td>
     <td>Bulwark</td>
@@ -98,7 +98,7 @@ body {
 		-This perk is only active when your opponent targets one of your mercs, not when an opponent retaliates damage onto a merc you attack with (only works when they attack you, not when you attack them)
 	</td>
 </tr>
-<tr>
+<tr id="005SelfRespawn">
     <td>5</td>
     <td><img src="Icons/005SelfRespawn.png" style="width:75" height="width:75"></td>
     <td>SelfRespawn</td>
@@ -109,7 +109,7 @@ body {
 		-This perk can activate as many times as it successfully rolls, meaning the merc could be immortal if you're very lucky.
 	</td>
 </tr>
-<tr>
+<tr id="006AntiRespawn">
     <td>6</td>
     <td><img src="Icons/006AntiRespawn.png" style="width:75" height="width:75"></td>
     <td>AntiRespawn</td>
@@ -119,7 +119,7 @@ body {
 		-This perk only works once per enemy slain, if the enemy has multiple chances to respawn they may do so.
 	</td>
 </tr>
-<tr>
+<tr id="007LandHeal">
     <td>7</td>
     <td><img src="Icons/007LandHeal.png" style="width:75" height="width:75"></td>
     <td>LandHeal</td>
@@ -129,7 +129,7 @@ body {
 	-Land cannot go beyond it's maximum capacity (3 for singles, 2 for splits, 4 for dice splits)
 	</td>
 </tr>
-<tr>
+<tr id="008DrawACard">
     <td>8</td>
     <td><img src="Icons/008DrawACard.png" style="width:75" height="width:75"></td>
     <td>DrawACard</td>
@@ -139,7 +139,7 @@ body {
 	-If this merc also has any perk like Explosion(12) and ExcessDamage(13), you might be able to draw more than one card per combat sequence.
 	</td>
 </tr>
-<tr>
+<tr id="009LandDamage">
     <td>9</td>
     <td><img src="Icons/009LandDamage.png" style="width:75" height="width:75"></td>
     <td>LandDamage</td>
@@ -149,7 +149,7 @@ body {
 		-If a land is completely full, and a merc (of the opponent's choosing) cannot be relocated to a different land, no land capacity is diminished. if an opponent's merc CAN be relocated, they are forced to do so and must lose a land capacity.
 	</td>
 </tr>
-<tr>
+<tr id="010StrikeFirst">
     <td>10</td>
     <td><img src="Icons/010StrikeFirst.png" style="width:75" height="width:75"></td>
     <td>StrikeFirst</td>
@@ -159,7 +159,7 @@ body {
 		-If the enemy dies before they would attack back, the attack sequence ends and the merc takes no damage.
 	</td>
 </tr>
-<tr>
+<tr id="011StrikeLast">
     <td>11</td>
     <td><img src="Icons/011StrikeLast.png" style="width:75" height="width:75"></td>
     <td>StrikeLast</td>
@@ -169,7 +169,7 @@ body {
 		-If the merc dies before they would attack back, the attack sequence ends and the enemy takes no damage.
 	</td>
 </tr>
-<tr>
+<tr id="012Explosion">
     <td>12</td>
     <td><img src="Icons/012Explosion.png" style="width:75" height="width:75"></td>
     <td>Explosion</td>
@@ -183,7 +183,7 @@ body {
 		-In the unlikely circumstance an opponent has zero mercs on the field when this perk is triggered, that player will take one hit of damage.
 	</td>
 </tr>
-<tr>
+<tr id="013ExcessDamage">
     <td>13</td>
     <td><img src="Icons/013ExcessDamage.png" style="width:75" height="width:75"></td>
     <td>ExcessDamage</td>
@@ -197,7 +197,7 @@ body {
 		-Excess damage could be diverted to the player directly. The opponent could still intercept that attack with one of their mercs, if possible. If you choose for the excess damage to go to the player, it cannot then deal more damage to another merc again. If you choose to attack the player, it needs to be the final target of the 'chain'.
 	</td>
 </tr>
-<tr>
+<tr id="014Butcher">
     <td>14</td>
     <td><img src="Icons/014Butcher.png" style="width:75" height="width:75"></td>
     <td>Butcher</td>
@@ -207,7 +207,7 @@ body {
 		-If this perk is confronted with NegateDamage(18), the two players may set the game aside and brawl on the spot, where the victor's merc rules in favor. alternatively, Players could pick even or odds, and roll a dice to determine the outcome.
 	</td>
 </tr>
-<tr>
+<tr id="015ChooseHeal">
     <td>15</td>
     <td><img src="Icons/015ChooseHeal.png" style="width:75" height="width:75"></td>
     <td>ChooseHeal</td>
@@ -217,7 +217,7 @@ body {
 		-The merc itself cannot be targeted by the perk, it can only heal allies.
 	</td>
 </tr>
-<tr>
+<tr id="016ChooseRespawn">
     <td>16</td>
     <td><img src="Icons/016ChooseRespawn.png" style="width:75" height="width:75"></td>
     <td>ChooseRespawn</td>
@@ -230,7 +230,7 @@ body {
 		-This ability cannot target the merc itself, when it dies this ability cannot bring it back.
 	</td>
 </tr>
-<tr>
+<tr id="017Noble">
     <td>17</td>
     <td><img src="Icons/017Noble.png" style="width:75" height="width:75"></td>
     <td>Noble</td>
@@ -241,7 +241,7 @@ body {
 		-The merc is still able to target opponent players directly like any other merc.
 	</td>
 </tr>
-<tr>
+<tr id="018NegateDamage">
     <td>18</td>
     <td><img src="Icons/018NegateDamage.png" style="width:75" height="width:75"></td>
     <td>NegateDamage</td>
@@ -254,7 +254,7 @@ body {
 	-If this perk is confronted with NegateDamage(18), the two players may set the game aside and brawl on the spot, where the victor's merc rules in favor. alternatively, Players could pick even or odds, and roll a dice to determine the outcome.
 	</td>
 </tr>
-<tr>
+<tr id="019LandOccupy">
     <td>19</td>
     <td><img src="Icons/019LandOccupy.png" style="width:75" height="width:75"></td>
     <td>LandOccupy</td>
@@ -270,7 +270,7 @@ body {
 		-If the merc has multiple of these perks, they can inhabit multiple enemy lands at once, either in the same land or different ones.
 	</td>
 </tr>
-<tr>
+<tr id="020AllHeal">
     <td>20</td>
     <td><img src="Icons/020AllHeal.png" style="width:75" height="width:75"></td>
     <td>AllHeal</td>
@@ -280,7 +280,7 @@ body {
 		-The perk does not activate a second time upon respawn.
 	</td>
 </tr>
-<tr>
+<tr id="021SpellImmunity">
     <td>21</td>
     <td><img src="Icons/021SpellImmunity.png" style="width:75" height="width:75"></td>
     <td>SpellImmunity</td>
@@ -291,7 +291,7 @@ body {
 		-For Drain(22), If the merc is damaged by an enemy with Drain(22), and this merc successfully negates it, it will never take damage from the ability, unless directly attacked again where it might not negate the ability. At the beginning of the new turn, whether the merc negated the effect or not on the round it was initially damaged will determine if it will continue taking damage or not.
 	</td>
 </tr>
-<tr>
+<tr id="022Drain">
     <td>22</td>
     <td><img src="Icons/022Drain.png" style="width:75" height="width:75"></td>
     <td>Drain</td>
@@ -305,7 +305,7 @@ body {
 		-This perk does not stack, i.e. if the merc is recieves this debuff and already had it, it does not take 4 damage instead of 2. the durations are not added onto each other either, and instead the previous duration (however much time is left), is overwritten by the most recent duration added (only if the most recent duration is longer than the previous)
 	</td>
 </tr>
-<tr>
+<tr id="023ViewHand">
     <td>23</td>
     <td><img src="Icons/023ViewHand.png" style="width:75" height="width:75"></td>
     <td>ViewHand</td>
@@ -316,7 +316,7 @@ body {
 		-If the merc respawns, this perk does not activate again.
 	</td>
 </tr>
-<tr>
+<tr id="024DestroyCard">
     <td>24</td>
     <td><img src="Icons/024DestroyCard.png" style="width:75" height="width:75"></td>
     <td>DestroyCard</td>
@@ -327,7 +327,7 @@ body {
 		-The opponent cannot shuffle their hand before this perk activates.
 	</td>
 </tr>
-<tr>
+<tr id="025AntiHeal">
     <td>25</td>
     <td><img src="Icons/025AntiHeal.png" style="width:75" height="width:75"></td>
     <td>AntiHeal</td>
@@ -336,7 +336,7 @@ body {
 	<td style="text-align:left;font-size:14;padding:10px;">-This perk prevents the merc from being granted any combat score for one turn, meaning after this effect successfully triggers during a combat sequence, in the prior and following turn perks like SelfHeal(3), ChooseHeal(15), AllHeal(20), Bestow(29), PassiveHealing(33), and Adaption(38) will not work. If the affected card has one of these abilities, it can still use them and grant combat score to another ally.
 	</td>
 </tr>
-<tr>
+<tr id="026Sacrifice">
     <td>26</td>
     <td><img src="Icons/026Sacrifice.png" style="width:75" height="width:75"></td>
     <td>Sacrifice</td>
@@ -350,7 +350,7 @@ body {
 	-This instant perk can only be activated if you have a deployed land corresponding to the merc of this instant perk. It does not matter if it's full, and it does not destroy a capacity. As long as theres a land the same faction as the merc, the instant perk can be activated.
 	</td>
 </tr>
-<tr>
+<tr id="027Freeze">
     <td>27</td>
     <td><img src="Icons/027Freeze.png" style="width:75" height="width:75"></td>
     <td>Freeze</td>
@@ -364,7 +364,7 @@ body {
 	-If a merc is attacked and already has freeze, the durations are not added onto each other either, and instead the previous duration (however much time is left), is overwritten by the most recent duration added (only if the most recent duration is longer than the previous)
 	</td>
 </tr>
-<tr>
+<tr id="028Lifelink">
     <td>28</td>
     <td><img src="Icons/028Lifelink.png" style="width:75" height="width:75"></td>
     <td>Lifelink</td>
@@ -377,7 +377,7 @@ body {
 	-While the most conventional use is to link to an enemy's merc, if the requirements are met you could also link it with one of your own (.?)
 	</td>
 </tr>
-<tr>
+<tr id="029Bestow">
     <td>29</td>
     <td><img src="Icons/029Bestow.png" style="width:75" height="width:75"></td>
     <td>Bestow</td>
@@ -389,7 +389,7 @@ body {
 	-This instant perk can only be activated if you have a deployed land corresponding to the merc of this instant perk. It does not matter if it's full, and it does not destroy a capacity. As long as theres a land the same faction as the merc, the instant perk can be activated.
 	</td>
 </tr>
-<tr>
+<tr id="030ExtraDamage">
     <td>30</td>
     <td><img src="Icons/030ExtraDamage.png" style="width:75" height="width:75"></td>
     <td>ExtraDamage</td>
@@ -400,7 +400,7 @@ body {
 	-If this merc dies during the initial combat sequence, the extra damage can still be applied, given it's rolled successfully.
 	</td>
 </tr>
-<tr>
+<tr id="031MercCapacity">
     <td>31</td>
     <td><img src="Icons/031MercCapacity.png" style="width:75" height="width:75"></td>
     <td>MercCapacity</td>
@@ -414,7 +414,7 @@ body {
 	-If an ally has EmptyMerc(34), it can inhabit this merc's land capacity at no cost to the perk, meaning the merc can still hold another ally. 
 	</td>
 </tr>
-<tr>
+<tr id="032DeathTimer">
     <td>32</td>
     <td><img src="Icons/032DeathTimer.png" style="width:75" height="width:75"></td>
     <td>DeathTimer</td>
@@ -427,7 +427,7 @@ body {
 	-Unless this merc has a perk like ExtraDamage(30), ExcessDamage(13), or Drain(22), The merc will be incapable of actually gaining duration, because it could only attack once and gain 1 duration, which is then lost at the beginning of the next turn. This cycle will repeat until the merc dies to combat, or the merc has no remaining enemies of the highlighted faction, where it will then run out of time.
 	</td>
 </tr>
-<tr>
+<tr id="033PassiveHealing">
     <td>33</td>
     <td><img src="Icons/033PassiveHealing.png" style="width:75" height="width:75"></td>
     <td>PassiveHealing</td>
@@ -438,7 +438,7 @@ body {
 	-Unlike other perks, this one does not have a faction constraint.<br>
 	</td>
 </tr>
-<tr>
+<tr id="034EmptyMerc">
     <td>34</td>
     <td><img src="Icons/034EmptyMerc.png" style="width:75" height="width:75"></td>
     <td>EmptyMerc</td>
@@ -450,7 +450,7 @@ body {
 	-If successfully rolled, this merc can be deployed into a land that is at full capacity.<br>
 	</td>
 </tr>  
-<tr>
+<tr id="035NoRespawn">
     <td>35</td>
     <td><img src="Icons/035NoRespawn.png" style="width:75" height="width:75"></td>
     <td>NoRespawn</td>
@@ -460,7 +460,7 @@ body {
 	-If this merc itself does not have a respawn ability, it is impossible to bring them back.<br>
 	</td>
 </tr>
-<tr>
+<tr id="036Recycle">
     <td>36</td>
     <td><img src="Icons/036Recycle.png" style="width:75" height="width:75"></td>
     <td>Recycle</td>
@@ -470,7 +470,7 @@ body {
 	-This instant perk can only be activated if you have a deployed land corresponding to the merc of this instant perk. It does not matter if it's full, and it does not destroy a capacity. As long as theres a land the same faction as the merc, the instant perk can be activated.
 	</td>
 </tr>
-<tr>
+<tr id="037Retreat">
     <td>37</td>
     <td><img src="Icons/037Retreat.png" style="width:75" height="width:75"></td>
     <td>Retreat</td>
@@ -483,7 +483,7 @@ body {
 	-If this merc also has a respawn ability trigger, you can choose whether to keep it in the land it already occupies, or place it in a new one. If you place it in a new one, you can roll for the full combat score (you're not limitied to just the dice value anymore)<br>
 	</td>
 </tr>
-<tr>
+<tr id="038Adaption">
     <td>38</td>
     <td><img src="Icons/038Adaption.png" style="width:75" height="width:75"></td>
     <td>Adaption</td>
@@ -492,7 +492,7 @@ body {
 	<td style="text-align:left;font-size:14;padding:10px;">-This happens not only when the merc is placed, but also every time it's relocated to a different land.<br>
 	</td>
 </tr>
-<tr>
+<tr id="039Unadaptive">
     <td>39</td>
     <td><img src="Icons/039Unadaptive.png" style="width:75" height="width:75"></td>
     <td>Unadaptive</td>
@@ -501,7 +501,7 @@ body {
 	<td style="text-align:left;font-size:14;padding:10px;">-If this merc needs to move lands for any reason, it is penalized.<br>
 	</td>
 </tr>
-<tr>
+<tr id="040Blunder">
     <td>40</td>
     <td><img src="Icons/040Blunder.png" style="width:75" height="width:75"></td>
     <td>Blunder</td>
@@ -512,7 +512,7 @@ body {
 	-On-hit perks like AntiRespawn(6), ChooseHeal(15), ChooseRespawn(16), Drain(22), etc.. Still work like normal, it's just the merc does 0 damage.<br>
 	</td>
 </tr>
-<tr>
+<tr id="041Challenge">
     <td>41</td>
     <td><img src="Icons/041Challenge.png" style="width:75" height="width:75"></td>
     <td>Challenge</td>
@@ -524,7 +524,7 @@ body {
 	-If no enemy mercs qualify for being targeted, this merc cannot target at all, much similarly to Noble(17).
 	</td>
 </tr>
-<tr>
+<tr id="042Snipe">
     <td>42</td>
     <td><img src="Icons/042Snipe.png" style="width:75" height="width:75"></td>
     <td>Snipe</td>
@@ -534,7 +534,7 @@ body {
 	-The enemy merc does not retaliate to both attacking mercs, only the one that initially targeted it, meaning the merc with this perk remains unaffected at the end of the combat sequence.<br>
 	</td>
 </tr>
-<tr>
+<tr id="044Reroll">
     <td>43</td>
     <td><img src="Icons/043Deny.png" style="width:75" height="width:75"></td>
     <td>Deny</td>
@@ -546,7 +546,7 @@ body {
 	-Does not include instant abilities like Sacrifice(26), Bestow(29), or Recycle(36).
 	</td>
 </tr>
-<tr id="my-section">
+<tr id="044Reroll">
     <td>44</td>
     <td><img src="Icons/044Reroll.png" style="width:75" height="width:75"></td>
     <td>Reroll</td>
