@@ -51,7 +51,9 @@ body {
 <img src="https://cdn.discordapp.com/attachments/1051245549917044857/1051327061094051921/PerkExample2.png" style="width:15%" height="width:15%">
 
 -->
-<a href="#my-section">Jump to Section</a>
+<a href="#001AlterDamage">
+	
+</a>
 
 <table  style="font-family:verdana">
 <tr>
@@ -534,7 +536,7 @@ body {
 	-The enemy merc does not retaliate to both attacking mercs, only the one that initially targeted it, meaning the merc with this perk remains unaffected at the end of the combat sequence.<br>
 	</td>
 </tr>
-<tr id="044Reroll">
+<tr id="043Deny">
     <td>43</td>
     <td><img src="Icons/043Deny.png" style="width:75" height="width:75"></td>
     <td>Deny</td>
