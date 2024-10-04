@@ -58,7 +58,7 @@ body {
   </tr>
   <tr>
     <td>1</td>
-    <td><img src="https://cdn.discordapp.com/attachments/1051245549917044857/1051245600328405102/001AlterDamage.png" style="width:75" height="width:75"></td>
+    <td><img src="/Images/001AlterDamage.png" style="width:75" height="width:75"></td>
     <td>AlterDamage</td>
 	<td>[Factor] Outgoing damage to [Faction] enemies</td>
 	<td style="text-align:left;font-size:14;padding:10px;">-If positive, merc deals extra damage, if negative, merc deals less damage.</td>
@@ -260,7 +260,7 @@ body {
     <td>SpellImmunity</td>
 	<td>[Chance] to ignore all negative status perks inflicted from [Faction] enemies</td>
 	<td style="text-align:left;font-size:14;padding:10px;">-This perk is rolled whenever the merc may take damage from these sources.<br>
-		-The negative status perks include: Drain(22), where this perk has no effect on them, ExcessDamage(13), where the merc cannot be targeted by the perk's effect, Explosion(12), where they won't be damaged from the perk's effect, Freeze(27), where they cannot be affected, Lifelink(28), where they cannot be targeted, ViewHand(23), where this card will not be revealed despite meeting all other requirements, and Snipe(42), Where this merc cannot be targeted.<br>
+		-The negative status perks include: Drain(22), where this perk has no effect on them, ExcessDamage(13), where the merc cannot be targeted by the perk's effect, Explosion(12), where they won't be damaged from the perk's effect, Freeze(27), where they cannot be affected, Lifelink(28), where they cannot be targeted, ViewHand(23), where this card will not be revealed despite meeting all other requirements, Snipe(42), Where this merc cannot be targeted, and Deny(43), Where this merc can bypass the restriction and be deployed.<br>
 		-For Drain(22), If the merc is damaged by an enemy with Drain(22), and this merc successfully negates it, it will never take damage from the ability, unless directly attacked again where it might not negate the ability. At the beginning of the new turn, whether the merc negated the effect or not on the round it was initially damaged will determine if it will continue taking damage or not.
 	</td>
   </tr>
