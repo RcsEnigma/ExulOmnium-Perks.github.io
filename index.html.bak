@@ -6,6 +6,10 @@ table, th, td {
   border-collapse: collapse;
   color:FFFFFF;
 }
+
+td {
+color:569AC6 }
+
 td:nth-child(odd), th:nth-child(odd) {
   background-color: #343231;
   <!--opacity: 0.7;-->
@@ -195,13 +199,13 @@ body {
     <th style="width:10%">Name</th>
 	<th style="width:6%">Tags</th>
 	<th style="width:30%">Effect</th>
-	<th style="width:46%;color:569AC6;">Notes</th>
+	<th style="width:46%">Notes</th>
 </tr>
 <tr id="001AlterDamage">
     <td>1</td>
     <td><img src="Icons/001AlterDamage.png" style="width:75" height="width:75"></td>
     <td>AlterDamage</td>
-	<td style="color:569AC6;">Offensive</td>
+	<td>Offensive</td>
 	<td>[Factor] Outgoing damage to [Faction] enemies</td>
 	<td style="text-align:left;font-size:14;padding:10px;">-If positive, merc deals extra damage, if negative, merc deals less damage.</td>
 </tr>
@@ -209,7 +213,7 @@ body {
     <td>2</td>
     <td><img src="Icons/002AlterDefence.png" style="width:75" height="width:75"></td>
     <td>AlterDefence</td>
-	<td style="color:569AC6;">Defensive</td>
+	<td>Defensive</td>
 	<td>[Factor] Incoming damage from [Faction] enemies</td>
 	<td style="text-align:left;font-size:14;padding:10px;">-If negative, merc takes less damage, if positive, merc takes extra damage.</td>
 </tr>
@@ -217,7 +221,7 @@ body {
     <td>3</td>
     <td><img src="Icons/003SelfHeal.png" style="width:75" height="width:75"></td>
     <td>SelfHeal</td>
-	<td style="color:569AC6;">Emergent</td>
+	<td>Emergent</td>
 	<td>[Factor] Combat score granted from attacking [Faction] enemies</td>
 	<td style="text-align:left;font-size:14;padding:10px;">-Factor is rerolled per attack sequence.</td>
 </tr>
@@ -225,7 +229,7 @@ body {
     <td>4</td>
     <td><img src="Icons/004Bulwark.png" style="width:75" height="width:75"></td>
     <td>Bulwark</td>
-	<td style="color:569AC6;">Defensive</td>
+	<td>Defensive</td>
 	<td>[Chance] For dealt damage from [Faction] enemies to be diverted to this merc instead of initial target</td>
 	<td style="text-align:left;font-size:14;padding:10px;">-On successful roll, mercs attack each other as if it were the one initially targeted.<br>
 		-The actual initial target of the enemy, your targeted ally, is ignored, thus the ally deals no damage to them.<br>
@@ -237,7 +241,7 @@ body {
     <td>5</td>
     <td><img src="Icons/005SelfRespawn.png" style="width:75" height="width:75"></td>
     <td>SelfRespawn</td>
-	<td style="color:569AC6;">Defensive</td>
+	<td>Defensive</td>
 	<td>[Chance] For this merc to respawn after being killed by [Faction]</td>
 	<td style="text-align:left;font-size:14;padding:10px;">-The merc's combat score is replenished and reshuffled when it respawns, as if it entered the field for the first time.<br>
 		-The merc's land doesn't lose capacity upon it's death, is housed in the same land upon respawn.<br>
@@ -248,7 +252,7 @@ body {
     <td>6</td>
     <td><img src="Icons/006AntiRespawn.png" style="width:75" height="width:75"></td>
     <td>AntiRespawn</td>
-	<td style="color:569AC6;">Offensive, Supportive</td>
+	<td>Offensive, Supportive</td>
 	<td>[Chance] For slain [Faction] enemies to be prevented from respawning</td>
 	<td style="text-align:left;font-size:14;padding:10px;">-Does nothing to enemies that don't respawn<br>
 		-This perk only works once per enemy slain, if the enemy has multiple chances to respawn they may do so.
@@ -258,7 +262,7 @@ body {
     <td>7</td>
     <td><img src="Icons/007LandHeal.png" style="width:75" height="width:75"></td>
     <td>LandHeal</td>
-	<td style="color:569AC6;">Supportive</td>
+	<td>Supportive</td>
 	<td>[Chance] For slain [Faction] enemies to replenish this merc’s land capacity</td>
 	<td style="text-align:left;font-size:14;padding:10px;">-Adds only 1 point per successful roll<br>
 	-Land cannot go beyond it's maximum capacity (3 for singles, 2 for splits, 4 for dice splits)
@@ -268,7 +272,7 @@ body {
     <td>8</td>
     <td><img src="Icons/008DrawACard.png" style="width:75" height="width:75"></td>
     <td>DrawACard</td>
-	<td style="color:569AC6;">Supportive</td>
+	<td>Supportive</td>
 	<td>[Chance] To draw a card for every slain [Faction] enemy </td>
 	<td style="text-align:left;font-size:14;padding:10px;">-If your hand is already full, you must either discard a card from your hand or discard the one you picked from your deck.<br>
 	-If this merc also has any perk like Explosion(12) and ExcessDamage(13), you might be able to draw more than one card per combat sequence.
@@ -278,7 +282,7 @@ body {
     <td>9</td>
     <td><img src="Icons/009LandDamage.png" style="width:75" height="width:75"></td>
     <td>LandDamage</td>
-	<td style="color:569AC6;">Offensive</td>
+	<td>Offensive</td>
 	<td>[Chance] To destroy a [Faction] land's capacity after attacking enemy in it</td>
 	<td style="text-align:left;font-size:14;padding:10px;">-You cannot target which land capacity to destory, the order goes as follows: Empty slots, Slots affected by LandOccupy(19), Slots with mercs in them.<br>
 		-If a land is completely full, and a merc (of the opponent's choosing) cannot be relocated to a different land, no land capacity is diminished. if an opponent's merc CAN be relocated, they are forced to do so and must lose a land capacity.
@@ -288,7 +292,7 @@ body {
     <td>10</td>
     <td><img src="Icons/010StrikeFirst.png" style="width:75" height="width:75"></td>
     <td>StrikeFirst</td>
-	<td style="color:569AC6;">Offensive</td>
+	<td>Offensive</td>
 	<td>[Chance] To deal damage first to [Faction] enemy, before they attack back</td>
 	<td style="text-align:left;font-size:14;padding:10px;">-Enemy's combat score is calculated after getting struck and before it attacks back.<br>
 		-If the enemy dies before they would attack back, the attack sequence ends and the merc takes no damage.
@@ -298,7 +302,7 @@ body {
     <td>11</td>
     <td><img src="Icons/011StrikeLast.png" style="width:75" height="width:75"></td>
     <td>StrikeLast</td>
-	<td style="color:569AC6;">Debuff</td>
+	<td>Debuff</td>
 	<td>[Chance] To deal damage last to [Faction] enemy, after they attack the merc</td>
 	<td style="text-align:left;font-size:14;padding:10px;">-Merc's combat score is calculated after getting struck and before it attacks back.<br>
 		-If the merc dies before they would attack back, the attack sequence ends and the enemy takes no damage.
@@ -308,7 +312,7 @@ body {
     <td>12</td>
     <td><img src="Icons/012Explosion.png" style="width:75" height="width:75"></td>
     <td>Explosion</td>
-	<td style="color:569AC6;">Magic, Offensive</td>
+	<td>Magic, Offensive</td>
 	<td>[Factor] Damage dealt to all [Faction] enemies on field upon being killed</td>
 	<td style="text-align:left;font-size:14;padding:10px;">-This and Respawning are mutually exclusive. If the opprtunity arises, it is up to you to decide if the merc will explode and deal damage or respawn. Mercs that respawn can still explode if they die again.<br>
 		-If this perk uses a dice value (rather than a static number), the factor is rolled a new time for each of the opposing mercs which would get affected.<br>
@@ -322,7 +326,7 @@ body {
     <td>13</td>
     <td><img src="Icons/013ExcessDamage.png" style="width:75" height="width:75"></td>
     <td>ExcessDamage</td>
-	<td style="color:569AC6;">Magic, Offensive</td>
+	<td">Magic, Offensive</td>
 	<td>[Chance] To deal excess damage to next [Faction] enemy after killing an enemy</td>
 	<td style="text-align:left;font-size:14;padding:10px;">-If the merc deals 10 damage and it only takes 4 to kill an enemy, you can divert that remaining 6 damage to another enemy of your choice. If it only took 5 damage to kill that one, you can divert that remaining 1 damage to a third enemy, etc...<br>
 		-A typical combat sequence does not arise from this chain, so like none of the subsequent enemies affected attack the merc as well. the only damage the merc takes is from the primary interaction.<br>
@@ -336,7 +340,7 @@ body {
     <td>14</td>
     <td><img src="Icons/014Butcher.png" style="width:75" height="width:75"></td>
     <td>Butcher</td>
-	<td style="color:569AC6;">Offensive</td>
+	<td>Offensive</td>
 	<td>[Chance] To immediately kill [Faction] enemy</td>
 	<td style="text-align:left;font-size:14;padding:10px;">-Enemy still damages the merc, even if the enemy gets instakilled at the exact same moment.<br>
 		-If this perk is confronted with NegateDamage(18), the two players may set the game aside and brawl on the spot, where the victor's merc rules in favor. alternatively, Players could pick even or odds, and roll a dice to determine the outcome.
@@ -346,7 +350,7 @@ body {
     <td>15</td>
     <td><img src="Icons/015ChooseHeal.png" style="width:75" height="width:75"></td>
     <td>ChooseHeal</td>
-	<td style="color:569AC6;">Supportive</td>
+	<td>Supportive</td>
 	<td>[Factor] Combat score granted to [Faction] ally of your choice from attacking enemy</td>
 	<td style="text-align:left;font-size:14;padding:10px;">-An enemy of any faction could be attacked to have this work.<br>
 		-The merc itself cannot be targeted by the perk, it can only heal allies.
@@ -356,7 +360,7 @@ body {
     <td>16</td>
     <td><img src="Icons/016ChooseRespawn.png" style="width:75" height="width:75"></td>
     <td>ChooseRespawn</td>
-	<td style="color:569AC6;">Supportive</td>
+	<td>Supportive</td>
 	<td>[Chance] To respawn any fallen [Faction] ally whenever they should’ve died instead</td>
 	<td style="text-align:left;font-size:14;padding:10px;">-This perk can roll as long as the merc is alive.<br>
 		-Whenever an ally on the field dies, roll this perk for a chance of them respawning (as long as they meet the faction requirement).<br>
@@ -369,7 +373,7 @@ body {
     <td>17</td>
     <td><img src="Icons/017Noble.png" style="width:75" height="width:75"></td>
     <td>Noble</td>
-	<td style="color:569AC6;">Defensive</td>
+	<td>Defensive</td>
 	<td>For [Duration], merc cannot target [Faction] enemies</td>
 	<td style="text-align:left;font-size:14;padding:10px;">-If theres no duration, the effect is perpetual.<br>
 		-Enemies can still target this merc, in which case it will begin the attack sequence and this merc can retaliate damage.<br>
@@ -380,7 +384,7 @@ body {
     <td>18</td>
     <td><img src="Icons/018NegateDamage.png" style="width:75" height="width:75"></td>
     <td>NegateDamage</td>
-	<td style="color:569AC6;">Defensive</td>
+	<td>Defensive</td>
 	<td>[Chance] To negate all incoming damage from [Faction] enemies</td>
 	<td style="text-align:left;font-size:14;padding:10px;">-During a combat sequence, if this perk successfully rolls, this merc will take zero damage, but will still retaliate damage to the opposing merc.<br>
 	-This perk can be rolled at any time the merc may take damage, such as from Explosion(12), ExcessDamage(13).<br>
