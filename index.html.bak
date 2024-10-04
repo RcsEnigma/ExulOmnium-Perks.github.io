@@ -58,7 +58,7 @@ body {
   </tr>
   <tr>
     <td>1</td>
-    <td><img src="/Images/001AlterDamage.png" style="width:75" height="width:75"></td>
+    <td><img src="/Images/#001AlterDamage.png" style="width:75" height="width:75"></td>
     <td>AlterDamage</td>
 	<td>[Factor] Outgoing damage to [Faction] enemies</td>
 	<td style="text-align:left;font-size:14;padding:10px;">-If positive, merc deals extra damage, if negative, merc deals less damage.</td>
