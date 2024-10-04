@@ -184,8 +184,8 @@ body {
 <a href="#043Deny">
 	<img src="Icons/043Deny.png" style="width:75" height="width:75"></td> 
 </a>
-<a href="#">
-	<img src="Icons/.png" style="width:75" height="width:75"></td> 
+<a href="#044Reroll">
+	<img src="Icons/044Reroll.png" style="width:75" height="width:75"></td> 
 </a>
 
 <table  style="font-family:verdana">
