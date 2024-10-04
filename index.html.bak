@@ -61,6 +61,7 @@ body {
 </style>
 
 <title>Exul Omnium Perks</title>
+<link rel="icon" type="image/x-icon" href="Icons/exulicon.png">
 <body style="background-color:272726;">
 
 <div class="header" id="myHeader" style="display: flex;">
@@ -498,7 +499,7 @@ body {
     <td>26</td>
     <td><img src="Icons/026Sacrifice.png" style="width:75" height="width:75"></td>
     <td>Sacrifice</td>
-	<td>Offensive, Supportive</td>
+	<td>Instant, Offensive, Supportive</td>
 	<td>Instead of being deployed, instantly destroy this merc and deal [Factor] damage to [Faction] enemy</td>
 	<td>-this perk can only be activated when the card is in your hand, at at your own discretion. If you choose not to activate this ability, the merc can be deployed normally.<br>
 	-This damage cannot be avoided by any abilities, such as NegateDamage(18), Bulwark(4), SpellImmunity(21), AlterDefence(2), etc.<br>
@@ -539,7 +540,7 @@ body {
     <td>29</td>
     <td><img src="Icons/029Bestow.png" style="width:75" height="width:75"></td>
     <td>Bestow</td>
-	<td>Supportive</td>
+	<td>Instant, Supportive</td>
 	<td>Instead of being deployed, instantly destroy this merc and grant [Factor] combat score to [Faction] ally</td>
 	<td>-this perk can only be activated when the card is in your hand, at at your own discretion. If you choose not to activate this ability, the merc can be deployed normally.<br>
 	-The merc does not activate any turn-based perks it may have, like 'on deploy' or 'upon death', such as AllHeal(20), ViewHand(23), SelfRespawn(5), Explosion(12), etc.<br>
