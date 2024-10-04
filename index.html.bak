@@ -11,7 +11,7 @@ td:nth-child(odd), th:nth-child(odd) {
   <!--opacity: 0.7;-->
 }
 tr {
-  scroll-margin-top: 70px;
+  scroll-margin-top: 150px;
   border-bottom: 1px solid #4860A0;
 }
 
@@ -54,11 +54,129 @@ body {
 <img src="https://cdn.discordapp.com/attachments/1051245549917044857/1051327061094051921/PerkExample2.png" style="width:15%" height="width:15%">
 
 -->
+
 <a href="#001AlterDamage">
 	<img src="Icons/001AlterDamage.png" style="width:75" height="width:75"></td> 
 </a>
-<a href="#029Bestow">
+<a href="#002AlterDefence">
 	<img src="Icons/002AlterDefence.png" style="width:75" height="width:75"></td> 
+</a>
+<a href="#003SelfHeal">
+	<img src="Icons/003SelfHeal.png" style="width:75" height="width:75"></td> 
+</a>
+<a href="#004Bulwark">
+	<img src="Icons/004Bulwark.png" style="width:75" height="width:75"></td> 
+</a>
+<a href="#005SelfRespawn">
+	<img src="Icons/005SelfRespawn.png" style="width:75" height="width:75"></td> 
+</a>
+<a href="#006AntiRespawn">
+	<img src="Icons/006AntiRespawn.png" style="width:75" height="width:75"></td> 
+</a>
+<a href="#007LandHeal">
+	<img src="Icons/007LandHeal.png" style="width:75" height="width:75"></td> 
+</a>
+<a href="#008DrawACard">
+	<img src="Icons/008DrawACard.png" style="width:75" height="width:75"></td> 
+</a>
+<a href="#009LandDamage">
+	<img src="Icons/009LandDamage.png" style="width:75" height="width:75"></td> 
+</a>
+<a href="#010StrikeFirst">
+	<img src="Icons/010StrikeFirst.png" style="width:75" height="width:75"></td> 
+</a>
+<a href="#011StrikeLast">
+	<img src="Icons/011StrikeLast.png" style="width:75" height="width:75"></td> 
+</a>
+<a href="#012Explosion">
+	<img src="Icons/012Explosion.png" style="width:75" height="width:75"></td> 
+</a>
+<a href="#013ExcessDamage">
+	<img src="Icons/013ExcessDamage.png" style="width:75" height="width:75"></td> 
+</a>
+<a href="#014Butcher">
+	<img src="Icons/014Butcher.png" style="width:75" height="width:75"></td> 
+</a>
+<a href="#015ChooseHeal">
+	<img src="Icons/015ChooseHeal.png" style="width:75" height="width:75"></td> 
+</a>
+<a href="#016ChooseRespawn">
+	<img src="Icons/016ChooseRespawn.png" style="width:75" height="width:75"></td> 
+</a>
+<a href="#017Noble">
+	<img src="Icons/017Noble.png" style="width:75" height="width:75"></td> 
+</a>
+<a href="#018NegateDamage">
+	<img src="Icons/018NegateDamage.png" style="width:75" height="width:75"></td> 
+</a>
+<a href="#019LandOccupy">
+	<img src="Icons/019LandOccupy.png" style="width:75" height="width:75"></td> 
+</a>
+<a href="#020AllHeal">
+	<img src="Icons/020AllHeal.png" style="width:75" height="width:75"></td> 
+</a>
+<a href="#021SpellImmunity">
+	<img src="Icons/021SpellImmunity.png" style="width:75" height="width:75"></td> 
+</a>
+<a href="#022Drain">
+	<img src="Icons/022Drain.png" style="width:75" height="width:75"></td> 
+</a>
+<a href="#023ViewHand">
+	<img src="Icons/023ViewHand.png" style="width:75" height="width:75"></td> 
+</a>
+<a href="#024DestroyCard">
+	<img src="Icons/024DestroyCard.png" style="width:75" height="width:75"></td> 
+</a>
+<a href="#025AntiHeal">
+	<img src="Icons/025AntiHeal.png" style="width:75" height="width:75"></td> 
+</a>
+<a href="#026Sacrifice">
+	<img src="Icons/026Sacrifice.png" style="width:75" height="width:75"></td> 
+</a>
+<a href="#027Freeze">
+	<img src="Icons/027Freeze.png" style="width:75" height="width:75"></td> 
+</a>
+<a href="#">
+	<img src="Icons/.png" style="width:75" height="width:75"></td> 
+</a>
+<a href="#">
+	<img src="Icons/.png" style="width:75" height="width:75"></td> 
+</a>
+<a href="#">
+	<img src="Icons/.png" style="width:75" height="width:75"></td> 
+</a>
+<a href="#">
+	<img src="Icons/.png" style="width:75" height="width:75"></td> 
+</a>
+<a href="#">
+	<img src="Icons/.png" style="width:75" height="width:75"></td> 
+</a>
+<a href="#">
+	<img src="Icons/.png" style="width:75" height="width:75"></td> 
+</a>
+<a href="#">
+	<img src="Icons/.png" style="width:75" height="width:75"></td> 
+</a>
+<a href="#">
+	<img src="Icons/.png" style="width:75" height="width:75"></td> 
+</a>
+<a href="#">
+	<img src="Icons/.png" style="width:75" height="width:75"></td> 
+</a>
+<a href="#">
+	<img src="Icons/.png" style="width:75" height="width:75"></td> 
+</a>
+<a href="#">
+	<img src="Icons/.png" style="width:75" height="width:75"></td> 
+</a>
+<a href="#">
+	<img src="Icons/.png" style="width:75" height="width:75"></td> 
+</a>
+<a href="#">
+	<img src="Icons/.png" style="width:75" height="width:75"></td> 
+</a>
+<a href="#">
+	<img src="Icons/.png" style="width:75" height="width:75"></td> 
 </a>
 
 <table  style="font-family:verdana">
