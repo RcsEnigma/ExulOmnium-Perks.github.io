@@ -8,6 +8,12 @@ table, th, td {
 }
 
 td:nth-child(4) {color:569AC6}
+td:nth-child(6) {
+            text-align: left;
+            font-size: 14px;
+            padding: 10px;
+			}
+
 
 td:nth-child(odd), th:nth-child(odd) {
   background-color: #343231;
@@ -690,7 +696,7 @@ body {
     <td>Reroll</td>
 	<td>Magic, Supportive</td>
 	<td>[Chance] to reroll [Faction] merc's combat score</td>
-	<td style="text-align:left;font-size:14;padding:10px;">-Only works if the target merc's current combat score is between it's minimum and maximum possible score. (if a target has 8+D20, it's CS would have to be 9-28)<br>
+	<td>-Only works if the target merc's current combat score is between it's minimum and maximum possible score. (if a target has 8+D20, it's CS would have to be 9-28)<br>
 	-"Rerolling" is effectively treating the merc like it was deployed for the first time again. Sometimes it's CS will raise, sometimes it will lower.<br>
 	-Only works if the merc deals damage to it's target.<br>
 	-Rerolling takes effect after both parties exchange damage, unless StrikeFirst(10) or StrikeLast(11) is relevant, for example.
