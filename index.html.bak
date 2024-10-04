@@ -623,7 +623,7 @@ body {
     <td>36</td>
     <td><img src="Icons/036Recycle.png" style="width:75" height="width:75"></td>
     <td>Recycle</td>
-	<td>Supportive</td>
+	<td>Instant, Supportive</td>
 	<td>Instead of being deployed, instantly destroy this merc and draw [Factor] cards from your deck</td>
 	<td>-Unlike other perks, this one does not have a faction constraint. <br>
 	-This instant perk can only be activated if you have a deployed land corresponding to the merc of this instant perk. It does not matter if it's full, and it does not destroy a capacity. As long as theres a land the same faction as the merc, the instant perk can be activated.
