@@ -10,7 +10,7 @@ table, th, td {
 td:nth-child(4) {color:569AC6}
 td:nth-child(6) {
             text-align: left;
-            font-size: 14px;
+            font-size: 75%;
             padding: 10px;
 			}
 
@@ -27,8 +27,6 @@ tr {
 html {
   scroll-behavior: smooth;
 }
-
-.proportional-small {font-size: 75%;}
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 body {
@@ -54,6 +52,7 @@ body {
 
 	<div class="header" id="myHeader">
 		<h2>Complete List of Exul Omnium Perks</h2>
+		<a href="#BackToTop">Back to Top</a>
 	</div>
 
 <!--
@@ -66,7 +65,7 @@ body {
 
 -->
 
-<a href="#001AlterDamage">
+<a href="#001AlterDamage"id="BackToTop">
 	<img src="Icons/001AlterDamage.png" style="width:75" height="width:75"></td> 
 </a>
 <a href="#002AlterDefence">
