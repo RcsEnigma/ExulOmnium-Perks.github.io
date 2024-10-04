@@ -50,9 +50,10 @@ body {
 
 <table  style="font-family:verdana">
   <tr>
-    <th style="width:5%">Number</th>
+    <th style="width:2%">Number</th>
     <th style="width:10%">Icon</th>
-    <th style="width:13%">Name</th>
+    <th style="width:10%">Name</th>
+	<th style="width:6%">Tags</th>
 	<th style="width:30%">Effect</th>
 	<th style="width:42%">Notes</th>
   </tr>
@@ -60,6 +61,7 @@ body {
     <td>1</td>
     <td><img src="Icons/001AlterDamage.png" style="width:75" height="width:75"></td>
     <td>AlterDamage</td>
+	<td>Offensive</td>
 	<td>[Factor] Outgoing damage to [Faction] enemies</td>
 	<td style="text-align:left;font-size:14;padding:10px;">-If positive, merc deals extra damage, if negative, merc deals less damage.</td>
   </tr>
@@ -67,6 +69,7 @@ body {
     <td>2</td>
     <td><img src="Icons/002AlterDefence.png" style="width:75" height="width:75"></td>
     <td>AlterDefence</td>
+	<td>Defensive</td>
 	<td>[Factor] Incoming damage from [Faction] enemies</td>
 	<td style="text-align:left;font-size:14;padding:10px;">-If negative, merc takes less damage, if positive, merc takes extra damage.</td>
   </tr>
@@ -500,7 +503,7 @@ body {
      <tr>
     <td>44</td>
     <td><img src="Icons/044Reroll.png" style="width:75" height="width:75"></td>
-    <td>Deny</td>
+    <td>Reroll</td>
 	<td>[Chance] to reroll [Faction] merc's combat score</td>
 	<td style="text-align:left;font-size:14;padding:10px;">-Only works if the target merc's current combat score is between it's minimum and maximum possible score. (if a target has 8+D20, it's CS would have to be 9-28)<br>
 	-"Rerolling" is effectively treating the merc like it was deployed for the first time again. Sometimes it's CS will raise, sometimes it will lower.<br>
