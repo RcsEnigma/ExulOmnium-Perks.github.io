@@ -90,8 +90,8 @@ body {
 .content {
 	padding: 0 18px;
 	color: #FFFFFF;
-	background-color: #272726;
-	border: solid;
+	background-color: #181818;
+	border: solid rgba(0, 0, 0, 0.5);
 	max-height: 0;
 	overflow: hidden;
 	transition: max-height 0.2s ease-out;
