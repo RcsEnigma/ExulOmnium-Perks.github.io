@@ -75,6 +75,7 @@ body {
 	content: '\02795'; <!--Plus-->
 	font-size: 13px;
 	color: white;
+	border: groove:
 	float: right;
 	margin-left: 5px;
 }
@@ -92,6 +93,7 @@ body {
 	color: #FFFFFF;
 	background-color: #272726;
 	max-height: 0;
+	border: groove:
 	overflow: hidden;
 	transition: max-height 0.2s ease-out;
 }
