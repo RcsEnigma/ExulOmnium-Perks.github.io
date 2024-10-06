@@ -19,6 +19,10 @@ td:nth-child(odd), th:nth-child(odd) {
   background-color: #343231;
   <!--opacity: 0.7;-->
 }
+
+p.outset {border-style: outset;}
+p.inset {border-style: inset;}
+
 tr {
   scroll-margin-top: 180px;
   border-bottom: 1px solid #4860A0;
@@ -70,16 +74,16 @@ body {
 	outline: none;
 }
 
-.active, .collapsible:hover {
-	background-color: #343231;
-}
-
 .collapsible:after {
 	content: '\02795'; <!--Plus-->
 	font-size: 13px;
 	color: white;
 	float: right;
 	margin-left: 5px;
+}
+
+.active, .collapsible:hover {
+	background-color: #343231;
 }
 
 .active:after {
@@ -248,7 +252,7 @@ body {
 	<img src="Icons/044Reroll.png" style="width:75" height="width:75"></td> 
 </a>
 
-<button type="button" class="collapsible">Open Collapsible</button>
+<button type="button" class="collapsible outset">Open Collapsible</button>
 <div class="content">
   <p>Lorem ipsum...</p>
 </div>
@@ -621,7 +625,7 @@ body {
     <td>32</td>
     <td><img src="Icons/032DeathTimer.png" style="width:75" height="width:75"></td>
     <td>DeathTimer</td>
-	<td>Timed, Debuff</td>
+	<td>Timed, Passive, Debuff</td>
 	<td>Merc is alive for [Duration] before it is automatically destroyed, unless it damages [Faction] enemies</td>
 	<td>-If this merc attacks the highlighted faction, it stays alive for 1 additional turn (+1 added to the remaining duration).<br>
 	-The timer starts on the turn that follows the one which the combat sequence occurred in.<br>
@@ -634,7 +638,7 @@ body {
     <td>33</td>
     <td><img src="Icons/033PassiveHealing.png" style="width:75" height="width:75"></td>
     <td>PassiveHealing</td>
-	<td>Timed, Emergent</td>
+	<td>Timed, Passive, Emergent</td>
 	<td>When deployed, this merc is granted 2 combat score per turn for [Duration]</td>
 	<td>-The merc can heal above their combat score, just like every other healing/granting perk.<br>
 	-The timer starts on the turn that follows the one which the combat sequence occurred in.<br>

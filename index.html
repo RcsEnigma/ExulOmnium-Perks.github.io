@@ -19,6 +19,10 @@ td:nth-child(odd), th:nth-child(odd) {
   background-color: #343231;
   <!--opacity: 0.7;-->
 }
+
+p.outset {border-style: outset;}
+p.inset {border-style: inset;}
+
 tr {
   scroll-margin-top: 180px;
   border-bottom: 1px solid #4860A0;
@@ -70,16 +74,16 @@ body {
 	outline: none;
 }
 
-.active, .collapsible:hover {
-	background-color: #343231;
-}
-
 .collapsible:after {
 	content: '\02795'; <!--Plus-->
 	font-size: 13px;
 	color: white;
 	float: right;
 	margin-left: 5px;
+}
+
+.active, .collapsible:hover {
+	background-color: #343231;
 }
 
 .active:after {
@@ -248,8 +252,8 @@ body {
 	<img src="Icons/044Reroll.png" style="width:75" height="width:75"></td> 
 </a>
 
-<button type="button" class="collapsible">Open Collapsible</button>
-<div class="content">
+<button type="button" class="collapsible outset">Open Collapsible</button>
+<div class="content inset">
   <p>Lorem ipsum...</p>
 </div>
 
