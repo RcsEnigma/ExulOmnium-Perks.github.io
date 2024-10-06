@@ -556,7 +556,7 @@ body {
     <td>27</td>
     <td><img src="Icons/027Freeze.png" style="width:75" height="width:75"></td>
     <td>Freeze</td>
-	<td>Magic, Supportive</td>
+	<td>Magic, Timed, Supportive</td>
 	<td>After combat, attacked [Faction] enemy cannot attack for [Duration]</td>
 	<td>When frozen, the merc cannot deal damage. They can still be attacked, but will not be able to retaliate. They cannot target mercs.<br>
 	-The timer starts on the turn that follows the one which the combat sequence occurred in.<br>
