@@ -88,7 +88,7 @@ body {
 
 .content {
 	padding: 0 18px;
-	background-color: white;
+	background-color: #272726;
 	max-height: 0;
 	overflow: hidden;
 	transition: max-height 0.2s ease-out;
