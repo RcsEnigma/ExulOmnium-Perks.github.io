@@ -60,8 +60,8 @@ body {
 }
 
 .collapsible {
-	background-color: #eee;
-	color: #343231;
+	background-color: #494949;
+	color: #444;
 	cursor: pointer;
 	padding: 18px;
 	width: 100%;
@@ -71,7 +71,7 @@ body {
 }
 
 .active, .collapsible:hover {
-	background-color: #ccc;
+	background-color: #343231;
 }
 
 .collapsible:after {
