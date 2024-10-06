@@ -88,6 +88,7 @@ body {
 
 .content {
 	padding: 0 18px;
+	color: #FFFFFF;
 	background-color: #272726;
 	max-height: 0;
 	overflow: hidden;
@@ -275,7 +276,7 @@ body {
     <td>2</td>
     <td><img src="Icons/002AlterDefence.png" style="width:75" height="width:75"></td>
     <td>AlterDefence</td>
-	<td>Defensive</td>
+	<td>Passive, Defensive</td>
 	<td>[Factor] Incoming damage from [Faction] enemies</td>
 	<td>-If negative, merc takes less damage, if positive, merc takes extra damage.</td>
 </tr>
@@ -290,7 +291,7 @@ body {
 <tr id="004Bulwark">
     <td>4</td>
     <td><img src="Icons/004Bulwark.png" style="width:75" height="width:75"></td>
-    <td>Bulwark</td>
+    <td>Passive, Bulwark</td>
 	<td>Defensive</td>
 	<td>[Chance] For dealt damage from [Faction] enemies to be diverted to this merc instead of initial target</td>
 	<td>-On successful roll, mercs attack each other as if it were the one initially targeted.<br>
@@ -303,7 +304,7 @@ body {
     <td>5</td>
     <td><img src="Icons/005SelfRespawn.png" style="width:75" height="width:75"></td>
     <td>SelfRespawn</td>
-	<td>Defensive</td>
+	<td>Passive, Defensive</td>
 	<td>[Chance] For this merc to respawn after being killed by [Faction]</td>
 	<td>-The merc's combat score is replenished and reshuffled when it respawns, as if it entered the field for the first time.<br>
 		-The merc's land doesn't lose capacity upon it's death, is housed in the same land upon respawn.<br>
@@ -446,7 +447,7 @@ body {
     <td>18</td>
     <td><img src="Icons/018NegateDamage.png" style="width:75" height="width:75"></td>
     <td>NegateDamage</td>
-	<td>Defensive</td>
+	<td>Passive, Defensive</td>
 	<td>[Chance] To negate all incoming damage from [Faction] enemies</td>
 	<td>-During a combat sequence, if this perk successfully rolls, this merc will take zero damage, but will still retaliate damage to the opposing merc.<br>
 	-This perk can be rolled at any time the merc may take damage, such as from Explosion(12), ExcessDamage(13).<br>
@@ -459,7 +460,7 @@ body {
     <td>19</td>
     <td><img src="Icons/019LandOccupy.png" style="width:75" height="width:75"></td>
     <td>LandOccupy</td>
-	<td>Supportive</td>
+	<td>Passive, Supportive</td>
 	<td>For [Duration]/On [Chance], merc inhabits one of enemy's [Faction] lands</td>
 	<td>-This is one of the only perks that uses either chance OR duration. If there's a chance, roll it when the merc enters the field. if it successfully rolls, the effect lasts until the merc is dead.<br>
 		-If the effect has a null value, it lasts until the merc is destroyed, just like the chance values.
@@ -485,7 +486,7 @@ body {
     <td>21</td>
     <td><img src="Icons/021SpellImmunity.png" style="width:75" height="width:75"></td>
     <td>SpellImmunity</td>
-	<td>Defensive</td>
+	<td>Passive, Defensive</td>
 	<td>[Chance] to ignore all negative status perks inflicted from [Faction] enemies</td>
 	<td>-This perk is rolled whenever the merc may take damage from these sources.<br>
 		-The negative status perks include: Drain(22), where this perk has no effect on them, ExcessDamage(13), where the merc cannot be targeted by the perk's effect, Explosion(12), where they won't be damaged from the perk's effect, Freeze(27), where they cannot be affected, Lifelink(28), where they cannot be targeted, ViewHand(23), where this card will not be revealed despite meeting all other requirements, Snipe(42), Where this merc cannot be targeted, Deny(43), Where this merc can bypass the restriction and be deployed, and Reroll(44), Where it will not be affected.<br>
@@ -562,6 +563,7 @@ body {
 	-Passive abilities, like Bulwark(4), NegateDamage(18), LandOccupy(19), SpellImmunity(21), AlterDefence(2), etc, are not affected by being inflicted by freeze.<br>
 	-This ability synergizes with perks that alter how damage is dealt, such as ExcessDamage(13), where all concurrently damaged mercs will be affected as well.<br>
 	-Respawning removes the Freeze effect.<br>
+	-Any timer-based perks the merc may have do not count down while it is frozen.<br>
 	-If a merc is attacked and already has freeze, the durations are not added onto each other either, and instead the previous duration (however much time is left), is overwritten by the most recent duration added (only if the most recent duration is longer than the previous)
 	</td>
 </tr>
@@ -569,7 +571,7 @@ body {
     <td>28</td>
     <td><img src="Icons/028Lifelink.png" style="width:75" height="width:75"></td>
     <td>Lifelink</td>
-	<td>Magic, Supportive</td>
+	<td>Magic, Passive, Supportive</td>
 	<td>When deployed, [Chance] to link to [Faction] merc of your choice</td>
 	<td>-When a link is established, the two mercs share alive states. If one of the them dies, whatever the cause, the other will automatically die simultaneously.<br>
 	-If one of the mercs has a respawn ability which activates, when it's linked merc dies, this merc will respawn and be "disconnected". if both mercs have a respawn ability that activates, the link remains.<br>
@@ -605,7 +607,7 @@ body {
     <td>31</td>
     <td><img src="Icons/031MercCapacity.png" style="width:75" height="width:75"></td>
     <td>MercCapacity</td>
-	<td>Supportive</td>
+	<td>Passive, Supportive</td>
 	<td>For [Duration], Merc can house 1 subsequent [Faction] ally, as if this merc has a land capacity</td>
 	<td>-This perk is active as long as the merc is alive. If this merc dies, the subsequent merc is is carrying assumes it's place in the land the merc was occupying. If the subsequent merc cannot fit in the concurrent land (because of faction restrictions), it canot be located to another land and is instantly destroyed. If this merc itself is respawned, the subsequent merc stays in this merc.<br>
 	-The subsequent merc does not inherit any of the merc's perks.<br>
@@ -619,7 +621,7 @@ body {
     <td>32</td>
     <td><img src="Icons/032DeathTimer.png" style="width:75" height="width:75"></td>
     <td>DeathTimer</td>
-	<td>Debuff</td>
+	<td>Timed, Debuff</td>
 	<td>Merc is alive for [Duration] before it is automatically destroyed, unless it damages [Faction] enemies</td>
 	<td>-If this merc attacks the highlighted faction, it stays alive for 1 additional turn (+1 added to the remaining duration).<br>
 	-The timer starts on the turn that follows the one which the combat sequence occurred in.<br>
@@ -632,7 +634,7 @@ body {
     <td>33</td>
     <td><img src="Icons/033PassiveHealing.png" style="width:75" height="width:75"></td>
     <td>PassiveHealing</td>
-	<td>Emergent</td>
+	<td>Timed, Emergent</td>
 	<td>When deployed, this merc is granted 2 combat score per turn for [Duration]</td>
 	<td>-The merc can heal above their combat score, just like every other healing/granting perk.<br>
 	-The timer starts on the turn that follows the one which the combat sequence occurred in.<br>
@@ -643,7 +645,7 @@ body {
     <td>34</td>
     <td><img src="Icons/034EmptyMerc.png" style="width:75" height="width:75"></td>
     <td>EmptyMerc</td>
-	<td>Supportive</td>
+	<td>Passive, Supportive</td>
 	<td>[Chance] for deployed merc to take up no capacity in [Faction] land</td>
 	<td>-This merc still needs to be bound to a land, thus it cannot be deployed without a proper land to accomidate it (even if it does not inhabit the capacity within).<br>
 	-The faction constraint may seem like a no-brainer, as the merc needs to be in the same land as it's own faction, but in the cases where the perk is a different faction than the merc itself, the ability can only work if the merc is placed in a land split comprised of the two aforementioned factions.<br>
@@ -655,7 +657,7 @@ body {
     <td>35</td>
     <td><img src="Icons/035NoRespawn.png" style="width:75" height="width:75"></td>
     <td>NoRespawn</td>
-	<td>Debuff</td>
+	<td>Passive, Debuff</td>
 	<td>[Chance] for this merc to ignore [Faction] ally respawn abilities</td>
 	<td>-This merc cannot be targeted by the respawn abilites that allies may provide. (only if the ally meets the faction and chance requirement)<br>
 	-If this merc itself does not have a respawn ability, it is impossible to bring them back.<br>
@@ -675,7 +677,7 @@ body {
     <td>37</td>
     <td><img src="Icons/037Retreat.png" style="width:75" height="width:75"></td>
     <td>Retreat</td>
-	<td>Defensive</td>
+	<td>Passive, Defensive</td>
 	<td>Instead of being killed by [Faction] enemy, [Chance] to relocate this merc into a new land</td>
 	<td>-When the merc enters a new viable land, their combat score is set to only their dice value. e.g. If a card has 10 + D12, and dies; relocate it to a new land, roll a D12, and set that factor as the merc's new combat score. The fixed value is fully ignored.<br>
 	-The land capacity the merc was previously in is still destroyed.<br>
@@ -739,7 +741,7 @@ body {
     <td>43</td>
     <td><img src="Icons/043Deny.png" style="width:75" height="width:75"></td>
     <td>Deny</td>
-	<td>Magic, Supportive</td>
+	<td>Magic, Passive, Supportive</td>
 	<td>[Chance] to deny opponent deployment of [Faction] mercs</td>
 	<td>-As long as a merc with this perk is on the field, mercs of the corresponding faction cannot be deployed and are prevented from entering the field (if the chance is rolled). <br>
 	-Includes split factions <br>
