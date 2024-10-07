@@ -25,12 +25,6 @@ tr {
   border-bottom: 1px solid #4860A0;
 }
 
-.table-cell-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
 html {
   scroll-behavior: smooth;
 }
@@ -103,13 +97,6 @@ body {
 	transition: max-height 0.2s ease-out;
 }
 
-.content p {
-  margin: 0;
-}
-
-.active + .content {
-  max-height: 1000px;
-}
 </style>
 
 <title>Exul Omnium Perks</title>
@@ -286,10 +273,7 @@ body {
 	<td>Offensive</td>
 	<td>[Factor] Outgoing damage to [Faction] enemies</td>
 	<td>
-    <div class="table-cell-content">
-        <span>-If positive, merc deals extra damage, if negative, merc deals less damage.</span>
-        <button type="button" class="collapsible">Interactions</button>
-	</div>
+    <button type="button" class="collapsible">Open Collapsible</button>
 	<div class="content">
 		<p>Lorem ipsum...</p>
 	</div>

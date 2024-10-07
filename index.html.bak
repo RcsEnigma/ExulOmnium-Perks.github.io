@@ -25,12 +25,6 @@ tr {
   border-bottom: 1px solid #4860A0;
 }
 
-.table-cell-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
 html {
   scroll-behavior: smooth;
 }
@@ -103,13 +97,6 @@ body {
 	transition: max-height 0.2s ease-out;
 }
 
-.content p {
-  margin: 0;
-}
-
-.active + .content {
-  max-height: 1000px; /* Use a large enough value to allow full expansion */
-}
 </style>
 
 <title>Exul Omnium Perks</title>
