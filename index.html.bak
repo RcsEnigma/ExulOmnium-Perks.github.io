@@ -25,6 +25,12 @@ tr {
   border-bottom: 1px solid #4860A0;
 }
 
+.table-cell-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -273,6 +279,12 @@ body {
 	<td>Offensive</td>
 	<td>[Factor] Outgoing damage to [Faction] enemies</td>
 	<td>-If positive, merc deals extra damage, if negative, merc deals less damage.</td>
+	<td>
+	<button type="button" class="collapsible">Open Collapsible</button>
+		<div class="content">
+			<p>Lorem ipsum...</p>
+		</div>
+	</td>
 </tr>
 <tr id="002AlterDefence">
     <td>2</td>
