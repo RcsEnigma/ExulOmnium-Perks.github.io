@@ -102,6 +102,14 @@ body {
 	overflow: hidden;
 	transition: max-height 0.2s ease-out;
 }
+
+.content p {
+  margin: 0;
+}
+
+.active + .content {
+  max-height: 1000px; /* Use a large enough value to allow full expansion */
+}
 </style>
 
 <title>Exul Omnium Perks</title>
@@ -281,9 +289,9 @@ body {
     <div class="table-cell-content">
         <span>-If positive, merc deals extra damage, if negative, merc deals less damage.</span>
         <button type="button" class="collapsible">Interactions</button>
-		<div class="content">
+	</div>
+	<div class="content">
 		<p>Lorem ipsum...</p>
-    </div>
 	</div>
     </td>
 </tr>
