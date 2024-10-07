@@ -90,7 +90,7 @@ body {
 .content {
 	padding: 0 18px;
 	color: #FFFFFF;
-	background-color: #181818;
+	background-color: #212121;
 	border: solid rgba(0, 0, 0, 0.3);
 	max-height: 0;
 	overflow: hidden;
