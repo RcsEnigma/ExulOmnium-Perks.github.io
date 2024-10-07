@@ -1,6 +1,12 @@
 <html>
 
 <style>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+body {
+  margin: 0;
+}
+
+
 table, th, td {
   text-align: center;
   border-collapse: collapse;
@@ -27,11 +33,6 @@ tr {
 
 html {
   scroll-behavior: smooth;
-}
-
-<meta name="viewport" content="width=device-width, initial-scale=1">
-body {
-  margin: 0;
 }
 
 .header {
@@ -65,7 +66,7 @@ body {
 	color: #FFFFFF;
 	cursor: pointer;
 	padding: 18px;
-	width: 100;
+	width: 100%;
 	border: solid rgba(0, 0, 0, 0.3);
 	text-align: left;
 	outline: none;
@@ -274,7 +275,7 @@ body {
 	<td>[Factor] Outgoing damage to [Faction] enemies</td>
 	<td>-If positive, merc deals more damage, if negative, merc deals less damage.</td>
 	<td>
-    <button type="button" class="collapsible">Open Collapsible</button>
+    <button type="button" class="collapsible">Interactions</button>
 	<div class="content">
 		<p>Lorem ipsum...</p>
 	</div>
