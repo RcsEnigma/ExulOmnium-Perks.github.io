@@ -280,7 +280,10 @@ body {
 	<td>
       <div class="table-cell-content">
         <span>-If positive, merc deals extra damage, if negative, merc deals less damage.</span>
-        <button type="button" class="collapsible">Open</button>
+        <button type="button" class="collapsible">Interactions</button>
+		</div>
+		<div class="content">
+		<p>Lorem ipsum...</p>
       </div>
     </td>
 </tr>
