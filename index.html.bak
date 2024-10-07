@@ -274,8 +274,7 @@ html {
     <td>AlterDamage</td>
 	<td>Offensive</td>
 	<td>[Factor] Outgoing damage to [Faction] enemies</td>
-	<td>-If positive, merc deals more damage, if negative, merc deals less damage.</td>
-	<td>
+	<td>-If positive, merc deals more damage, if negative, merc deals less damage.
     <button type="button" class="collapsible">Interactions</button>
 	<div class="content">
 		<p>Lorem ipsum...</p>
